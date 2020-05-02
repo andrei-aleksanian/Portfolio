@@ -1,0 +1,40 @@
+*{
+    z-index: 10;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3vw;
+
+    width: 28vw;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+header ul{
+    width: 100%;
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li{
+/* Nothing required here */
+}
+
+header ul li a{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.3em;
+}
+
+.active{
+    color: rgba(255, 255, 255, 0.9);
+}

@@ -1,0 +1,10 @@
+.Triangle {
+    width: 0;
+    height: 0;
+    margin:0;
+    padding: 0;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+
+    border-top: 2vw solid #252933;
+}

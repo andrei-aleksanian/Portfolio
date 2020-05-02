@@ -1,0 +1,50 @@
+.WelcomePage{
+    height: 100vh;
+    background: #252933;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoBox{
+    z-index: 10;
+}
+
+.Logo{
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.Logo span{
+    color: #d10000;
+}
+
+.Slogan{
+    color: #fff;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: end;
+    margin: -0.1em 0.5em 0 0;
+}
+
+.starSky{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    z-index: 0;
+}
+
+.starSky div{
+    height: 100%;
+}
+
+.starSky div canvas{
+    transition: all 0.3s ease-in-out;
+}

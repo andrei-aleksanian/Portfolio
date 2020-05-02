@@ -6,21 +6,16 @@ class HomeAnimation extends PtsCanvas{
     constructor() {
         super();
         this.stars = [];
-        this.tempOpacity = 0;
+        this.tempOpacity = 0.4;
         this.startTime = new Date().getTime();
 
-        this.lastPts = null;
-        this.currentPts = null;
-
-        this.leftPts = null;
-        this.leftOpacity = 0;
-
-        this.visitedPts = [];
+        this.lastStar = null;
+        this.currentStar = null;
     }
 
     _create() {
         if (this.stars.length === 0) {
-            this.stars = Create.distributeRandom( this.space.innerBound, 100 );
+            this.stars = Create.distributeRandom( this.space.innerBound, 150 );
             this.stars = this.stars.map(pts => new Star(pts));
         }
     }
@@ -36,37 +31,27 @@ class HomeAnimation extends PtsCanvas{
     }
 
     updateOpacity(){
-        if (this.lastPts === this.currentPts){
-            if ((Date.now() - this.startTime) >= 100) {
+        if (this.lastStar === this.currentStar){
+            if ((Date.now() - this.startTime) >= 50) {
                 this.startTime = Date.now();
 
                 if (this.tempOpacity >= 1) {
                     this.tempOpacity = 1;
                 } else {
-                    this.tempOpacity += 0.07;
+                    this.tempOpacity += 0.035;
                 }
             }
         } else {
-            this.leftPts = this.lastPts;
-            this.lastPts.visited = true;
-            this.lastPts.leftOpacity = this.tempOpacity;
-            this.visitedPts.push(this.lastPts);
-            this.leftOpacity = this.tempOpacity;
-            this.tempOpacity = 0;
-        }
-    }
+            this.leftPts = this.lastStar;
 
-    updateLeftOpacity(){
-        if (this.leftPts){
-            if ((Date.now() - this.startTime) >= 100) {
-
-                if (this.leftOpacity <= 0) {
-                    this.leftOpacity = 0;
-                    this.leftPts = null;
-                } else {
-                    this.leftOpacity -= 0.07;
+            this.stars.forEach(star => {
+                if (this.lastStar === star){
+                    star.visited = true;
+                    console.log("leaving and setting opacity", this.tempOpacity);
+                    star.currentOpacity = this.tempOpacity;
                 }
-            }
+            });
+            this.tempOpacity = 0.4;
         }
     }
 
@@ -78,27 +63,30 @@ class HomeAnimation extends PtsCanvas{
             a.pts.$subtract(p).magnitudeSq() - b.pts.$subtract(p).magnitudeSq()
         );
 
-        this.currentPts = this.stars[0];
+        // console.log("Opacity set for [0]", this.stars[0].leftOpacity, this.tempOpacity);
+        this.lastStar = this.stars[0];
 
-        // console.log(this.visitedPts);
-        this.visitedPts.forEach(star => {
-            this.form.fillOnly(`rgba(255, 255, 255, ${this.leftOpacity})`).point(pts, 2, "circle" );
+
+        this.stars.forEach(star => {
+            if (star.currentOpacity > 0.4){
+                // console.log(star.leftOpacity, "star", star);
+                this.form.fillOnly(`rgba(255, 255, 255, ${star.leftOpacity})`).point(star.pts, 2.5, "circle");
+
+                // star.updateLeftOpacity();
+
+                if ((Date.now() - this.startTime) >= 50) {
+                    star.updateCurrentOpacity();
+                }
+
+            } else {
+                this.form.fillOnly(`rgba(255, 255, 255, ${star.startingOpacity}`).point(star.pts, 2.5, "circle");
+            }
         });
 
-
-
-        if (this.leftPts){
-            const pts = this.leftPts.pts;
-            this.updateLeftOpacity();
-            this.form.fillOnly(`rgba(255, 255, 255, ${this.leftOpacity})`).point(pts, 2, "circle" );
-        }
         this.updateOpacity();
 
-        this.form.fillOnly(`rgba(255, 255, 255, ${this.tempOpacity})`).point( this.currentPts.pts, 2, "circle" );
-        const allPts = this.stars.map(star => star.pts);
-        this.form.fillOnly(`rgba(255, 255, 255, 0.4)`).points( allPts, 2, "circle" );
-
-        this.lastPts = this.stars[0];
+        this.stars[0].leftOpacity = this.tempOpacity;
+        this.currentStar = this.stars[0];
     }
 }
 

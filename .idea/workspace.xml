@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Andrei.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Triangle/Triangle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Triangle/Triangle.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/HomeAnimation/HomeAnimation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/HomeAnimation/Star.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Layout/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/Layout/Layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/GitHub.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/notepad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/script.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/social.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/HomeAnimation/HomeAnimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/HomeAnimation/HomeAnimation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/HomeAnimation/Star.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/HomeAnimation/Star.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,18 +83,34 @@
       <workItem from="1588332832414" duration="324000" />
       <workItem from="1588333169155" duration="201000" />
       <workItem from="1588333385566" duration="9440000" />
-      <workItem from="1588416857450" duration="13461000" />
+      <workItem from="1588416857450" duration="21014000" />
     </task>
+    <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
+      <created>1588432099406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588432099406</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working shine ad fade effect for 2 stars." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working shine ad fade effect for 2 stars." />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="77" key="#Plugins" timestamp="1588333179458">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="277" y="77" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1588333179458" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1588432097925">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1588432097925" />
     <state x="498" y="320" key="Github.ShareDialog" timestamp="1588357614017">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -140,6 +135,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="197" y="20" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1588347733120" />
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588432108103">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1588432108103" />
     <state x="347" y="184" width="672" height="678" key="search.everywhere.popup" timestamp="1588349788804">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

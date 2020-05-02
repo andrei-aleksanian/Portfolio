@@ -2,19 +2,26 @@ class Star {
     constructor(pts) {
         this.pts = pts;
         this.visited = false;
-        this.leftOpacity = 0;
+        this.currentOpacity = 0.4;
+        this.startingOpacity = Math.random()*0.3 + 0.1;
+        this.leftOpacity = this.startingOpacity;
     }
 
-    updateLeftOpacity(startTime, leftOpacity){
-        this.leftOpacity = leftOpacity;
-        if ((Date.now() - startTime) >= 100) {
-            if (this.leftOpacity <= 0) {
-                // console.log("end fade");
-                this.leftOpacity = 0;
-                this.leftPts = null;
-            } else {
-                this.leftOpacity -= 0.07;
-            }
+    updateCurrentOpacity(){
+        if (this.leftOpacity <= this.startingOpacity) {
+            this.leftOpacity = this.startingOpacity;
+            this.visited = false;
+        } else {
+            this.leftOpacity -= 0.035;
+        }
+    }
+
+    updateOpacity(){
+        if (this.leftOpacity >= 1) {
+            this.leftOpacity = 1;
+            this.visited = true;
+        } else {
+            this.leftOpacity += 0.035;
         }
     }
 }

@@ -1,5 +1,5 @@
 .Triangle {
-    width: 0;
+    /*width: 0;*/
     height: 0;
     margin:0;
     padding: 0;
@@ -7,4 +7,11 @@
     border-right: 49vw solid transparent;
 
     border-top: 2vw solid #252933;
+}
+
+.reverse{
+    background: #252933;
+    border-left: 49vw solid #252933;
+    border-right: 49vw solid #252933;
+    border-top: 2vw solid #fff;
 }

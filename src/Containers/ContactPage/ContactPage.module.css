@@ -1,0 +1,9 @@
+.ContactPage{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.ContactPage h1{
+    font-size: 3.5rem;
+}

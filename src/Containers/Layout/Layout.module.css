@@ -3,7 +3,7 @@
 }
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     margin-right: 3vw;
@@ -37,4 +37,49 @@ header ul li a{
 
 .active{
     color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer */
+
+footer{
+    margin: 0;
+    padding: 2vh 0;
+
+    height: 10vh;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #252933;
+}
+
+footer ul{
+    color: #fff;
+
+    list-style: none;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul li{
+
+}
+
+footer p{
+    color: #fff;
+    opacity: 0.9;
+
+}
+
+footer p span{
+    color: #d10000;
+}
+
+@media screen and (max-width: 1000px){
+    header{
+        display: none;
+    }
 }

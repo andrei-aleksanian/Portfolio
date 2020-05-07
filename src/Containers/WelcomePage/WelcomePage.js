@@ -1,12 +1,8 @@
 import React, {useEffect} from 'react';
 import classes from './WelcomePage.module.css';
-import HomeAnimation from "../HomeAnimation/HomeAnimation";
+import HomeAnimation from "./HomeAnimation/HomeAnimation";
 
 const WelcomePage = props => {
-    // useEffect(() => {
-    //     HomeAnimation();
-    // }, []);
-
     return (
         <div className={classes.WelcomePage}>
             <div className={classes.LogoBox}>

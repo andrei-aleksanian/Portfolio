@@ -2,7 +2,13 @@ import React from 'react';
 import classes from './Triangle.module.css';
 
 const Triangle = props => {
-    return <div className={classes.Triangle}></div>
+    let stylesArr = [classes.Triangle];
+
+    if (props.reverse){
+        stylesArr.push(classes.reverse);
+    }
+
+    return <div className={stylesArr.join(" ")}></div>
 };
 
 export default Triangle;

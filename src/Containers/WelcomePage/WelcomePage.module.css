@@ -48,3 +48,24 @@
 .starSky div canvas{
     transition: all 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 1000px){
+    .WelcomePage{
+        height: 98vh;
+    }
+
+    .Logo{
+        line-height: 3.5rem;
+        text-align: right;
+        padding: 0 0.5em 0 0;
+        margin-left: -0.5em;
+    }
+
+    .Slogan{
+        color: #fff;
+        font-size: 1.5rem;
+        font-style: italic;
+        text-align: end;
+        margin: 0.1em 1em 0 0;
+    }
+}

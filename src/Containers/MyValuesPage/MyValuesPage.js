@@ -13,17 +13,17 @@ const MyValuesPage = props => {
     const bigScreen = window.screen.width > 1000;
     let values = [
         {
-            name: "User Experience",
+            name: `<span>User</span> Experience`,
             description: `<span>User</span> Experience is always my <span>top priority</span>.`,
             image: UXImage,
         },
         {
-            name: "Programming Standards",
+            name: `<span>Programming</span> Standards`,
             description: `Up-to-date, <span>maintainable code</span> is what makes outstanding websites reality.`,
             image: ProgrammingStandardsImage,
         },
         {
-            name: "Original Design",
+            name: `<span>Original</span> Design`,
             description: `I believe, every web page needs to be <span>unique</span>.`,
             image: OriginalDesignImage,
         }
@@ -31,18 +31,18 @@ const MyValuesPage = props => {
 
     if (bigScreen){
         values.push({
-                name: "Responsive Design",
-                description: `People should be able to use my website on <span>any device</span> easily`,
+                name: `<span>Responsive</span> Design`,
+                description: `People should be able to use my website on <span>any device</span> easily.`,
                 image: ResponsiveDesignImage,
             });
         values.push({
-                name: "Modern Frameworks",
-                description: `I keep myself <span>up-to-date</span> with modern JavaScript frameworks and syntax, e.g. <span>React</span> and <span>ES6+</span>`,
+                name: `<span>Modern</span> Frameworks`,
+                description: `I keep myself <span>up-to-date</span> with modern JavaScript frameworks and syntax, e.g. <span>React</span> and <span>ES6+</span>.`,
                 image: ModernFrameworksImage,
             });
         values.push({
-                name: "Creativity",
-                description: `I think developers should be able to find creative ways to <span>engage</span> with the user`,
+                name: `<span>Creativity</span>`,
+                description: `I think developers should be able to find creative ways to <span>engage</span> with the user.`,
                 image: CreativityImage,
             });
     }

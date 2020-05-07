@@ -2,50 +2,13 @@
     z-index: 10;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin-right: 3vw;
-
-    width: 28vw;
-    height: 10vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-
-header ul{
-    width: 100%;
-
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul li{
-/* Nothing required here */
-}
-
-header ul li a{
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.3em;
-}
-
-.active{
-    color: rgba(255, 255, 255, 0.9);
-}
-
 /* Footer */
 
 footer{
     margin: 0;
     padding: 2vh 0;
 
-    height: 10vh;
+    height: 12vh;
 
     display: flex;
     flex-flow: column;
@@ -59,7 +22,7 @@ footer ul{
     color: #fff;
 
     list-style: none;
-    width: 30vw;
+    width: 50vw;
     display: flex;
     justify-content: space-between;
 }
@@ -71,15 +34,66 @@ footer ul li{
 footer p{
     color: #fff;
     opacity: 0.9;
-
 }
 
 footer p span{
     color: #d10000;
 }
 
-@media screen and (max-width: 1000px){
+header{
+    display: none;
+}
+
+footer img{
+    width: 48px;
+    height: 48px;
+}
+
+@media screen and (min-width: 1000px){
     header{
-        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 3vw;
+
+        width: 28vw;
+        height: 10vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    header ul{
+        width: 100%;
+
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header ul li{
+        /* Nothing required here */
+    }
+
+    header ul li a{
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.3em;
+    }
+
+    .active{
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+
+    footer ul{
+        width: 20vw;
+    }
+
+    footer img{
+        width: 64px;
+        height: 64px;
     }
 }

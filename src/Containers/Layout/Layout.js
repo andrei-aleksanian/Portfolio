@@ -1,4 +1,7 @@
 import React, {Fragment} from 'react';
+import GitHubImage from '../../assets/img/Contact/GitHub.svg';
+import LinkedInImage from '../../assets/img/Contact/LinkedIn.png';
+import EmailImage from '../../assets/img/Contact/Email.png';
 import classes from './Layout.module.css';
 
 const Layout = props => {
@@ -16,9 +19,9 @@ const Layout = props => {
             {props.children}
             <footer>
                 <ul>
-                    <li>GitHub</li>
-                    <li>LinkedIn</li>
-                    <li>Email</li>
+                    <li><img src={GitHubImage} alt="GitHub"/></li>
+                    <li><img src={LinkedInImage} alt="LinkedIn"/></li>
+                    <li><img src={EmailImage} alt="Email"/></li>
                 </ul>
                 <p>Andrei Aleksanian <span>©2020</span></p>
             </footer>

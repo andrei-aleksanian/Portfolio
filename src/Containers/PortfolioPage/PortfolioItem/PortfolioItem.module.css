@@ -7,20 +7,53 @@
 }
 
 .HoverInfo{
+    z-index: 9999;
     position: relative;
     top: 0;
     left: 0;
-    width: 80%;
+    width: 100%;
     height: 10rem;
+    margin: 0;
 
     background: #ffffff;
     line-height: 2rem;
 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
     font-size: 22px;
-    padding: 1rem 10%;
+    padding: 1rem 0;
 
     opacity: 0;
     transition: opacity 0.5s ease-out;
+}
+
+.HoverInfoName, .HoverInfoDescription, .OpenButton{
+    padding:0;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.HoverInfoName{
+    /*line-height: 1em;*/
+    color: #252933;
+}
+
+.HoverInfoDescription{
+    font-size: 0.7em;
+}
+
+.OpenButton{
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10%;
+
+    background: #FF9100;
+    color: #fff;
+    padding: 1% 2%;
+    border-radius: 2px;
 }
 
 .Image{
@@ -28,7 +61,7 @@
     top: -12rem;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 12rem;
 
     opacity: 0;
     transition: opacity 0.5s ease-out;

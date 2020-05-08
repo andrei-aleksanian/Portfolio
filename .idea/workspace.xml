@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
       <workItem from="1588416857450" duration="69878000" />
       <workItem from="1588874058310" duration="207000" />
       <workItem from="1588874283176" duration="835000" />
-      <workItem from="1588937457670" duration="13023000" />
+      <workItem from="1588937457670" duration="17746000" />
     </task>
     <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
       <created>1588432099406</created>
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588873999153</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Portfolio done, needs content.">
+      <created>1588954131408</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588954131408</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,17 +138,18 @@
     <MESSAGE value="Stars all done, values half way. All icons added" />
     <MESSAGE value="Stars all done, values half way. All icons added." />
     <MESSAGE value="Values page done, including responsiveness." />
-    <option name="LAST_COMMIT_MESSAGE" value="Values page done, including responsiveness." />
+    <MESSAGE value="Portfolio done, needs content." />
+    <option name="LAST_COMMIT_MESSAGE" value="Portfolio done, needs content." />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="77" key="#Plugins" timestamp="1588333179458">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="277" y="77" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1588333179458" />
-    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1588873998268">
+    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1588954130464">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1588873998268" />
+    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1588954130464" />
     <state x="498" y="320" key="Github.ShareDialog" timestamp="1588357614017">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -221,10 +226,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="197" y="20" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1588347733120" />
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588874000946">
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588954135916">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1588874000946" />
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1588954135916" />
     <state x="491" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588440216003">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

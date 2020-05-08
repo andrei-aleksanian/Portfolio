@@ -7,7 +7,9 @@ const PortfolioItem = props => {
 
     const hoverInfo = (
         <div className={descriptionClasses}>
-            <div dangerouslySetInnerHTML={{__html: props.description}}></div>
+            <span className={classes.HoverInfoName}>{props.name}</span>
+            <span className={classes.HoverInfoDescription}>{props.description}</span>
+            <a className={classes.OpenButton} href={props.link} rel='noopener noreferrer' target="_blank">Open</a>
         </div>
     );
 

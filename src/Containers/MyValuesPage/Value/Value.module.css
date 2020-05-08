@@ -45,6 +45,13 @@ span {
     padding-left: 0.5em;
 }
 
+@media screen and (min-width: 300px) and (min-height: 500px){
+    .Value{
+        width: 90%;
+        height: 90%;
+    }
+}
+
 @media screen and (min-width: 1000px){
     .Value{
         display: flex;

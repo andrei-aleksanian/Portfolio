@@ -1,5 +1,5 @@
 .WelcomePage{
-    height: 100vh;
+    height: 98vh;
     background: #252933;
 
     display: flex;
@@ -7,13 +7,15 @@
     align-items: center;
 }
 
-.LogoBox{
-    z-index: 10;
-}
-
 .Logo{
-    color: #fff;
     font-size: 4rem;
+    line-height: 3.5rem;
+    text-align: end;
+    padding: 0 0.5em 0 0;
+    margin-left: -0.5em;
+
+    color: #fff;
+    /*font-size: 4rem;*/
     font-family: "Segoe UI", sans-serif;
 }
 
@@ -24,9 +26,11 @@
 .Slogan{
     color: #fff;
     font-size: 1.5rem;
+    margin: 0.1em 1em 0 0;
+
+    /*font-size: 1.5rem;*/
     font-style: italic;
     text-align: end;
-    margin: -0.1em 0.5em 0 0;
 }
 
 .starSky{
@@ -49,23 +53,55 @@
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (min-width: 1000px){
     .WelcomePage{
-        height: 98vh;
+        height: 100vh;
+        background: #252933;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .LogoBox{
+        z-index: 10;
     }
 
     .Logo{
-        line-height: 3.5rem;
-        text-align: right;
-        padding: 0 0.5em 0 0;
-        margin-left: -0.5em;
+        color: #fff;
+        /*font-size: 4rem;*/
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    .Logo span{
+        color: #d10000;
     }
 
     .Slogan{
         color: #fff;
-        font-size: 1.5rem;
+        /*font-size: 1.5rem;*/
         font-style: italic;
         text-align: end;
-        margin: 0.1em 1em 0 0;
+        margin: -0.1em 0.5em 0 0;
+    }
+}
+
+@media screen and (min-width: 300px) and (min-height: 500px){
+    .Logo{
+        font-size: 3.5rem;
+    }
+
+    .Slogan{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 300px) and (min-height: 700px){
+    .Logo{
+        font-size: 4rem;
+    }
+
+    .Slogan{
+        font-size: 1.5rem;
     }
 }

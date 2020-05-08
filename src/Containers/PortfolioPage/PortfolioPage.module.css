@@ -1,11 +1,43 @@
 .PortfolioPage{
     display: flex;
-    height: 100vh;
-    justify-content: center;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
     background: #252933;
 }
 
 .PortfolioPage h1{
     font-size: 3rem;
     color: #fff;
+}
+
+.funProjects{
+    display: none;
+}
+
+.PortfolioPage h2{
+    text-align: start;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.PortfolioItems{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .PortfolioItems{
+        flex-flow: row;
+        align-items: center;
+    }
+
+    /*.PortfolioPage h2{*/
+    /*    display: block;*/
+    /*}*/
+
+    .funProjects{
+        display: block;
+    }
 }

@@ -9,7 +9,7 @@ const PortfolioItem = props => {
         <div className={descriptionClasses}>
             <span className={classes.HoverInfoName}>{props.name}</span>
             <span className={classes.HoverInfoDescription}>{props.description}</span>
-            <a className={classes.OpenButton} href={props.link} rel='noopener noreferrer' target="_blank">Open</a>
+            <a className={classes.OpenButton} href={props.link} rel='noopener noreferrer' target="_blank">See</a>
         </div>
     );
 

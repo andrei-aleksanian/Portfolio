@@ -57,8 +57,11 @@ const PortfolioPage = props => {
     return (
         <div className={classes.PortfolioPage}>
             <h1>Portfolio</h1>
-            <div className={classes.PortfolioItems}>
-                {portfolioItems.map(p => <PortfolioItem {...p} />)}
+            <div className={classes.funProjects}>
+                <h2>Latest big projects</h2>
+                <div className={classes.PortfolioItems}>
+                    {portfolioItems.map(p => <PortfolioItem {...p} />)}
+                </div>
             </div>
             <div className={classes.funProjects}>
                 <h2>And some fun ones...</h2>

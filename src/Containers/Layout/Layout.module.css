@@ -8,7 +8,6 @@ footer{
     margin: 0;
     padding: 2vh 0;
 
-    height: 12vh;
 
     display: flex;
     flex-flow: column;
@@ -22,16 +21,17 @@ footer ul{
     color: #fff;
 
     list-style: none;
-    width: 50vw;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
 }
 
 footer ul li{
-
+    margin: 0 1rem;
 }
 
 footer p{
+    margin-top: 0.5rem;
     color: #fff;
     opacity: 0.9;
 }
@@ -51,12 +51,11 @@ footer img{
 
 @media screen and (min-width: 1000px){
     header{
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         margin-right: 3vw;
 
-        width: 28vw;
         height: 10vh;
 
         display: flex;
@@ -70,12 +69,12 @@ footer img{
 
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         align-items: center;
     }
 
     header ul li{
-        /* Nothing required here */
+        padding: 0 1rem;
     }
 
     header ul li a{
@@ -87,9 +86,7 @@ footer img{
         color: rgba(255, 255, 255, 0.9);
     }
 
-
-    footer ul{
-        width: 20vw;
+    footer ul li{
     }
 
     footer img{

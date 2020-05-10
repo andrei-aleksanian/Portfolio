@@ -2,9 +2,16 @@
     width: 17rem;
     height: 12rem;
     margin: 1.5rem 0;
-    border: 2px solid #FF9100;
+
+    border-radius: 2px;
+    border: 2px solid orange;
     padding: 0;
+    transition: all 0.3s ease-in-out;
 }
+
+/*.PortfolioItem:hover{*/
+/*    box-shadow: 0px 0px 10px 0px rgba(187,187,187,1);*/
+/*}*/
 
 .HoverInfo{
     z-index: 9999;
@@ -37,7 +44,7 @@
 }
 
 .HoverInfoName{
-    /*line-height: 1em;*/
+    font-size: 1.2em;
     color: #252933;
 }
 
@@ -50,10 +57,18 @@
     text-decoration: none;
     margin-top: 10%;
 
-    background: #FF9100;
-    color: #fff;
-    padding: 1% 2%;
+    background: #fff;
+    color: #252933;
+    padding: 1% 5%;
     border-radius: 2px;
+    border: 2px solid orange;
+    transition: all 0.2s ease-in-out;
+}
+
+.OpenButton:hover{
+    color: #fff;
+    background: orange;
+    border: 2px solid orange;
 }
 
 .Image{

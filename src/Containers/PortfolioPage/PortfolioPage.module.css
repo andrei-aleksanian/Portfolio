@@ -7,7 +7,7 @@
 }
 
 .PortfolioPage h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #fff;
 }
 
@@ -16,9 +16,15 @@
 }
 
 .PortfolioPage h2{
+    margin-top: 1rem;
     text-align: start;
     font-size: 2rem;
     color: #fff;
+}
+
+.BigProjectsHeader{
+    width: 100%;
+    text-align: start;
 }
 
 .PortfolioItems{

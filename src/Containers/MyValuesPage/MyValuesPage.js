@@ -14,17 +14,17 @@ const MyValuesPage = props => {
     let values = [
         {
             name: `<span>User</span> Experience`,
-            description: `<span>User</span> Experience is always my <span>top priority</span>.`,
+            description: `<div><span>User</span> Experience is always my <span>top priority</span>.</div>`,
             image: UXImage,
         },
         {
             name: `<span>Programming</span> Standards`,
-            description: `Up-to-date, <span>maintainable code</span> is what makes outstanding websites reality.`,
+            description: `<div>Up-to-date, <span>maintainable code</span> is what makes outstanding websites reality.</div>`,
             image: ProgrammingStandardsImage,
         },
         {
             name: `<span>Original</span> Design`,
-            description: `I believe, every web page needs to be <span>unique</span>.`,
+            description: `<div>I believe, every web page needs to be <span>unique</span>.</div>`,
             image: OriginalDesignImage,
         }
     ];
@@ -32,17 +32,17 @@ const MyValuesPage = props => {
     if (bigScreen){
         values.push({
                 name: `<span>Responsive</span> Design`,
-                description: `People should be able to use my website on <span>any device</span> easily.`,
+                description: `<div>People should be able to use my website on <span>any device</span> easily.</div>`,
                 image: ResponsiveDesignImage,
             });
         values.push({
                 name: `<span>Modern</span> Frameworks`,
-                description: `I keep myself <span>up-to-date</span> with modern JavaScript frameworks and syntax, e.g. <span>React</span> and <span>ES6+</span>.`,
+                description: `<div>I keep myself <span>up-to-date</span> with modern JavaScript frameworks and syntax, e.g. <span>React</span> and <span>ES6+</span>.</div>`,
                 image: ModernFrameworksImage,
             });
         values.push({
                 name: `<span>Creativity</span>`,
-                description: `I think developers should be able to find creative ways to <span>engage</span> with the user.`,
+                description: `<div>I think developers should be able to find creative ways to <span>engage</span> with the user.</div>`,
                 image: CreativityImage,
             });
     }

@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/ContactPage/ContactPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ContactPage/ContactPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/FormFactory/Form.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/FormFactory/Form.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/Layout/Layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Layout/Layout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" afterDir="false" />
@@ -97,7 +91,7 @@
       <workItem from="1588874058310" duration="207000" />
       <workItem from="1588874283176" duration="835000" />
       <workItem from="1588937457670" duration="24156000" />
-      <workItem from="1589112935981" duration="18173000" />
+      <workItem from="1589112935981" duration="20348000" />
     </task>
     <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
       <created>1588432099406</created>
@@ -148,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589127945146</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Almost all css refined. On track to: animating all page, adding links to footer, form error handling and better ui.">
+      <created>1589146601991</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589146601991</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,17 +164,18 @@
     <MESSAGE value="Portfolio done, needs content." />
     <MESSAGE value="Portfolio done, button might need changing" />
     <MESSAGE value="Form added, firebase function for sending emails et up." />
-    <option name="LAST_COMMIT_MESSAGE" value="Form added, firebase function for sending emails et up." />
+    <MESSAGE value="Almost all css refined. On track to: animating all page, adding links to footer, form error handling and better ui." />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost all css refined. On track to: animating all page, adding links to footer, form error handling and better ui." />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="77" key="#Plugins" timestamp="1588333179458">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="277" y="77" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1588333179458" />
-    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589127944138">
+    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589146601144">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589127944138" />
+    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589146601144" />
     <state x="498" y="320" key="Github.ShareDialog" timestamp="1588357614017">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -250,10 +252,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="197" y="20" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1588347733120" />
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589127958310">
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589146608560">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589127958310" />
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589146608560" />
     <state x="491" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588440216003">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

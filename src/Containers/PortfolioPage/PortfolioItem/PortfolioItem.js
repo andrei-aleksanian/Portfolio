@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import classes from './PortfolioItem.module.css';
 
 const PortfolioItem = props => {
-    let [descriptionClasses, setDescriptionClasses] = useState([classes.HoverInfo, classes.displayNone].join(" "));
+    let [descriptionClasses, setDescriptionClasses] = useState([classes.HoverInfo].join(" "));
     let [imageClasses, setImageClasses] = useState([classes.Image, classes.opacity].join(" "));
 
     const hoverInfo = (

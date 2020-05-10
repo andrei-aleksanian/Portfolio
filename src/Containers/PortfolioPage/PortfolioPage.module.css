@@ -22,11 +22,6 @@
     color: #fff;
 }
 
-.BigProjectsHeader{
-    width: 100%;
-    text-align: start;
-}
-
 .PortfolioItems{
     display: flex;
     flex-flow: column;

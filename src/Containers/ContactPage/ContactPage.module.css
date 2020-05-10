@@ -1,9 +1,11 @@
 .ContactPage{
     display: flex;
-    height: 100vh;
+    padding: 5vh 0;
+    /*height: 100vh;*/
     justify-content: center;
 }
 
 .ContactPage h1{
     font-size: 3rem;
+    padding: 0 0 1vh;
 }

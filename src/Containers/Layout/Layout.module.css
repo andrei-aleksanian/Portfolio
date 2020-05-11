@@ -40,7 +40,7 @@ footer p span{
     color: #d10000;
 }
 
-header{
+.Header{
     display: none;
 }
 
@@ -50,34 +50,41 @@ footer img{
 }
 
 @media screen and (min-width: 1000px){
-    header{
+    .Fix {
+        position: fixed!important;
+        background: #252933;
+    }
+
+    .Header {
+        z-index: 9999;
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 3vw;
-
-        height: 10vh;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-    }
-
-    header ul{
         width: 100%;
 
-        list-style: none;
+        height: 7vh;
+
         display: flex;
-        /*justify-content: space-between;*/
         align-items: center;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
     }
 
-    header ul li{
+    .Header ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-right: 10vh;
+
+        list-style: none;
+    }
+
+    .Header ul li{
         padding: 0 1rem;
     }
 
-    header ul li a{
+    .Header ul li a{
         color: rgba(255, 255, 255, 0.6);
         font-size: 1.3em;
     }

@@ -31,6 +31,10 @@ h2{
 
 }
 
+.form textarea{
+    height: 20vh;
+}
+
 .form input, textarea:focus {
     outline: none;
 }

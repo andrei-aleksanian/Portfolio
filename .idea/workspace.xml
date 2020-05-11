@@ -3,10 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/ContactPage/ContactPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ContactPage/ContactPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/FormFactory/Form.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/FormFactory/Form.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/Layout/Layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Layout/Layout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +98,9 @@
       <workItem from="1588874058310" duration="207000" />
       <workItem from="1588874283176" duration="835000" />
       <workItem from="1588937457670" duration="24156000" />
-      <workItem from="1589112935981" duration="20348000" />
+      <workItem from="1589112935981" duration="20559000" />
+      <workItem from="1589150976143" duration="135000" />
+      <workItem from="1589198054544" duration="10039000" />
     </task>
     <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
       <created>1588432099406</created>
@@ -149,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589146601991</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Better design, problem with portfolio index, still.">
+      <created>1589150907473</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589150907473</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,37 +181,38 @@
     <MESSAGE value="Portfolio done, button might need changing" />
     <MESSAGE value="Form added, firebase function for sending emails et up." />
     <MESSAGE value="Almost all css refined. On track to: animating all page, adding links to footer, form error handling and better ui." />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost all css refined. On track to: animating all page, adding links to footer, form error handling and better ui." />
+    <MESSAGE value="Better design, problem with portfolio index, still." />
+    <option name="LAST_COMMIT_MESSAGE" value="Better design, problem with portfolio index, still." />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="77" key="#Plugins" timestamp="1588333179458">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="277" y="77" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1588333179458" />
-    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589146601144">
+    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589150906651">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589146601144" />
+    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589150906651" />
     <state x="498" y="320" key="Github.ShareDialog" timestamp="1588357614017">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="498" y="320" key="Github.ShareDialog/0.0.1368.872@0.0.1368.872" timestamp="1588357614017" />
-    <state width="1348" height="220" key="GridCell.Tab.0.bottom" timestamp="1589118984552">
+    <state width="1348" height="220" key="GridCell.Tab.0.bottom" timestamp="1589203073239">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="220" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1589118984552" />
-    <state width="1348" height="220" key="GridCell.Tab.0.center" timestamp="1589118984552">
+    <state width="1348" height="220" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1589203073239" />
+    <state width="1348" height="220" key="GridCell.Tab.0.center" timestamp="1589203073239">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="220" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1589118984552" />
-    <state width="1348" height="220" key="GridCell.Tab.0.left" timestamp="1589118984552">
+    <state width="1348" height="220" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1589203073239" />
+    <state width="1348" height="220" key="GridCell.Tab.0.left" timestamp="1589203073239">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="220" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1589118984552" />
-    <state width="1348" height="220" key="GridCell.Tab.0.right" timestamp="1589118984552">
+    <state width="1348" height="220" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1589203073239" />
+    <state width="1348" height="220" key="GridCell.Tab.0.right" timestamp="1589203073239">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1348" height="220" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1589118984552" />
+    <state width="1348" height="220" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1589203073239" />
     <state width="1348" height="273" key="GridCell.Tab.1.bottom" timestamp="1588874023628">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -252,10 +269,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="197" y="20" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1588347733120" />
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589146608560">
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589150912128">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589146608560" />
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589150912128" />
     <state x="491" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588440216003">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

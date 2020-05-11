@@ -48,7 +48,7 @@ const MyValuesPage = props => {
     }
 
     return (
-        <div className={classes.MyValuesPage}>
+        <div id="" className={classes.MyValuesPage}>
             <h1>My Values</h1>
             <div className={classes.ValuesBox}>
                 {values.map(v => <Value bigScreen={bigScreen} {...v}/>)}

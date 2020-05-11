@@ -55,7 +55,7 @@ const PortfolioPage = props => {
     ];
 
     return (
-        <div className={classes.PortfolioPage}>
+        <div id="Portfolio" className={classes.PortfolioPage}>
             <h1>Portfolio</h1>
             <div>
                 <h2 className={classes.funProjects}>Latest big projects</h2>

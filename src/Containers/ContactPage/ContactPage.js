@@ -81,7 +81,7 @@ const ContactPage = props => {
 
 
     return (
-        <div className={classes.ContactPage}>
+        <div id="Contact" className={classes.ContactPage}>
             <Form onSubmit={submit} inputFields={inputFields} title="Contact Me"/>
         </div>
     );

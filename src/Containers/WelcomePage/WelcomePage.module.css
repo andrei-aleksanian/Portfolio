@@ -68,6 +68,7 @@
     }
 
     .Logo{
+        padding: 0;
         color: #fff;
         /*font-size: 4rem;*/
         font-family: "Segoe UI", sans-serif;
@@ -82,7 +83,7 @@
         /*font-size: 1.5rem;*/
         font-style: italic;
         text-align: end;
-        margin: -0.1em 0.5em 0 0;
+        margin: 0.1em 0 0 1em;
     }
 }
 

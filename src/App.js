@@ -11,7 +11,7 @@ function App() {
     <div>
         <Layout>
             <WelcomePage />
-            <Triangle />
+            <Triangle id="About"/>
             <MyValuesPage />
             <Triangle reverse />
             <PortfolioPage />

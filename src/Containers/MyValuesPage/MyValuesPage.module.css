@@ -1,45 +1,32 @@
 .MyValuesPage{
     display: flex;
     flex-flow: column;
-    /*height: 115vh;*/
-    justify-content: center;
     align-items: center;
 }
 
-.ValuesBox{
+.smallValuesBox{
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
+    /*padding: 1rem 0;*/
 
     width: 100%;
     height: 90%;
+}
+
+.ValuesBox{
+    display: none;
 }
 
 h1{
     font-size: 3rem;
 }
 
-@media screen and (min-width: 400px) and (min-height: 800px){
-    .MyValuesPage{
-        height: 90vh;
-    }
-}
-
-@media screen and (min-width: 300px) and (min-height: 500px){
-    .MyValuesPage{
-        height: 140vh;
-    }
-}
-
-@media screen and (min-width: 300px) and (min-height: 800px){
-    .MyValuesPage{
-        height: 100vh;
-    }
-}
-
 @media screen and (min-width: 1000px) {
+    .smallValuesBox{
+        display: none;
+    }
+
     .MyValuesPage{
         padding: 2vh 0;
         height: auto;
@@ -50,6 +37,7 @@ h1{
     }
 
     .ValuesBox{
+        display: flex;
         flex-flow: row;
         flex-wrap: wrap;
         align-items: flex-start;

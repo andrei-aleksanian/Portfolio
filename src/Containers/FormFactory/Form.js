@@ -7,6 +7,7 @@ const Form = props => {
     const [inputFields, setInputFields] = useState(null);
     const [formIsValid, setFormIsValid] = useState(true);
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [error, updateError] = useState(null);
 
     useEffect(() => {
         setInputFields(props.inputFields);
@@ -60,19 +61,38 @@ const Form = props => {
         setFormIsValid(formIsValid);
     };
 
-    let error;
+    const submit = (e) => {
+        e.preventDefault();
+        const formIsValid = isFormValid();
+        props.onSubmit(e, formIsValid);
+
+        setFormIsValid(formIsValid);
+        setFormSubmitted(true);
+    };
+
     let formInvalidMessage;
+    let formSentMessage;
+    let errorMessage;
 
     if (!formIsValid){
-        formInvalidMessage = <p className={classes.invalidForm}>Please fill in all the fields correctly</p>;
+        formInvalidMessage = <p className={[classes.invalidForm, classes.error].join(" ")}>
+            Please fill in all the fields correctly</p>;
     } else {
         formInvalidMessage = null;
     }
 
-    if (props.error){
-        error = <p className={classes.error}>Sending message failed. Please try again.</p>;
+    if (formSubmitted){
+        formSentMessage = <p className={[classes.invalidForm, classes.sent].join(" ")}>
+            Thank you for your message!</p>;
+    } else {
+        formSentMessage = null;
+    }
+
+    if (error){
+        errorMessage = <p className={[classes.invalidForm, classes.error].join(" ")}>
+            Sending message failed. Please try again.</p>;
     }else{
-        error = null;
+        errorMessage = null;
     }
 
     let formElements = [];
@@ -82,15 +102,6 @@ const Form = props => {
             config: inputFields[key]
         })
     }
-
-    const submit = (e) => {
-        e.preventDefault();
-        const formIsValid = isFormValid();
-        props.onSubmit(e, formIsValid);
-
-        setFormIsValid(formIsValid);
-        setFormSubmitted(true);
-    };
 
     return (
         <div className={classes.Wrapper}>
@@ -106,8 +117,7 @@ const Form = props => {
                                   value={el.config.value}
                     />;
                 })}
-                <div><button>Submit</button> {formInvalidMessage}</div>
-                {error}
+                <div><button>Submit</button> {formSentMessage} {formInvalidMessage} {errorMessage}</div>
             </form>
         </div>
     );

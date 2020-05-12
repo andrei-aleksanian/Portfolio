@@ -70,12 +70,15 @@ const ContactPage = props => {
                 message: inputFields["message"].value,
             }
         }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
+            console.log(response);
+            if (response.data.message === 'success') {
+
                 resetInputFields();
-            } else if (response.data.status === 'fail') {
+            } else if (response.data.message === 'fail') {
                 alert("Message failed to send.")
             }
+        }).catch(err => {
+
         });
     }
 

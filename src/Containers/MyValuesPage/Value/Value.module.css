@@ -4,11 +4,14 @@
     align-items: center;
     justify-content: center;
 
-    width: 70%;
-    height: 70%;
-    padding: 0;
+    width: 85%;
+    margin: 3vh 0;
 
     font-size: 17px;
+}
+
+.SmallValue .Border > *:nth-child(2){
+    margin-bottom: 2vh;
 }
 
 .Border{
@@ -20,7 +23,7 @@
     justify-content: space-evenly;
 
     border: 2px solid #FF9100;
-    padding: 2%;
+    padding: 0 5% 3%;
     margin: 0;
 
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
@@ -29,10 +32,6 @@
 
 .Border:hover{
     box-shadow: 0px 0px 30px 0px rgba(187,187,187,1);
-}
-
-.Border > *{
-    /*margin-top: 1%;*/
 }
 
 .Border img{
@@ -44,13 +43,6 @@
 
 span {
     color: #d10000;
-}
-
-@media screen and (min-width: 300px) and (min-height: 500px){
-    .Value{
-        width: 90%;
-        height: 90%;
-    }
 }
 
 @media screen and (min-width: 1000px){

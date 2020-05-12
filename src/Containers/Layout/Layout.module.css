@@ -41,7 +41,41 @@ footer p span{
 }
 
 .Header{
+    display: flex;
+
+    z-index: 9999;
+    position: absolute;
+    top: 1vh;
+    right: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.Header ul{
     display: none;
+}
+
+.Fix {
+    position: fixed!important;
+    top: 0!important;
+    background-color: #252933!important;
+    box-shadow: 0 0 5px #252933;
+}
+
+.Fix .progressBar {
+    opacity: 1;
+}
+
+.progressBar{
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #FF9100;
+    transition: width 0.5s ease-in-out;
+
+    border-radius: 2px;
 }
 
 footer img{
@@ -50,27 +84,6 @@ footer img{
 }
 
 @media screen and (min-width: 1000px){
-    .Fix {
-        position: fixed!important;
-        top: 0!important;
-        background-color: #252933!important;
-        box-shadow: 0 0 5px #252933;
-    }
-
-    .Fix .progressBar {
-        opacity: 1;
-    }
-
-    .progressBar{
-        opacity: 0;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 2px;
-        background-color: #FF9100;
-        transition: width 0.5s ease-in-out;
-    }
-
     .Header {
         z-index: 9999;
         position: absolute;

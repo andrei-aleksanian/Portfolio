@@ -16,7 +16,6 @@ h2{
     flex-flow: column;
     align-items: flex-start;
     width: 100%;
-    /*color: #252933;*/
 }
 
 .form input, textarea{
@@ -64,8 +63,6 @@ h2{
 
 .invalidForm{
     display: inline-block;
-    font-size: 15px;
-    color: red;
     padding: 0;
     margin: 0;
 }
@@ -83,6 +80,10 @@ a{
 
 .error{
     color: red;
+}
+
+.sent{
+    color: green;
 }
 
 @media screen and (min-width:1000px) {

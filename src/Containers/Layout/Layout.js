@@ -1,13 +1,11 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useRef, useState} from 'react';
 import GitHubImage from '../../assets/img/Contact/GitHub.svg';
 import LinkedInImage from '../../assets/img/Contact/LinkedIn.png';
 import EmailImage from '../../assets/img/Contact/Email.png';
 import classes from './Layout.module.css';
 
 const Layout = props => {
-
     const [scrollPosition, setScrollPosition] = useState(0);
-
     const [headerElements, setHeaderElements] = useState([
         {
             name: "Welcome",
@@ -30,7 +28,7 @@ const Layout = props => {
     useEffect(() => {
         // fixing header if we scroll through welcome page
         listenToScrollEvent();
-        console.log(scrollPosition, "[return]");
+        progressBar.current.style.width = `${scrollPosition}%`;
 
         if (scrollPosition <= 30){
             highlightNew("Welcome");
@@ -82,12 +80,11 @@ const Layout = props => {
         );
     };
 
+    const progressBar = useRef(null);
+
     let headerClasses = [classes.Header];
-    if (scrollPosition <= 30){
-        // highlightNew("Welcome");
-    } else if (scrollPosition >= 30){
+    if (scrollPosition >= 30){
         headerClasses.push(classes.Fix);
-        // highlightNew("About");
     }
 
     return (
@@ -104,6 +101,7 @@ const Layout = props => {
                         })
                     }
                 </ul>
+                <div ref={progressBar} id="progressBar" className={classes.progressBar}></div>
             </header>
             {props.children}
             <footer>

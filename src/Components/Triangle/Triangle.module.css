@@ -7,6 +7,9 @@
     border-right: 49vw solid transparent;
 
     border-top: 2vw solid #252933;
+
+    scroll-margin-top: 3vh;
+
 }
 
 .reverse{

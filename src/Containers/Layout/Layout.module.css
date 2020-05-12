@@ -53,9 +53,22 @@ footer img{
     .Fix {
         position: fixed!important;
         top: 0!important;
-        background: #252933!important;
-        /*border-bottom: 1px solid orange;*/
+        background-color: #252933!important;
         box-shadow: 0 0 5px #252933;
+    }
+
+    .Fix .progressBar {
+        opacity: 1;
+    }
+
+    .progressBar{
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background-color: #FF9100;
+        transition: width 0.5s ease-in-out;
     }
 
     .Header {
@@ -67,11 +80,11 @@ footer img{
 
         height: 7vh;
 
-        background: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0);
         display: flex;
         align-items: center;
         color: #fff;
-        transition: all 0.2s linear;
+        transition: box-shadow, border-bottom, background-color 0.3s linear;
     }
 
     .Header ul{

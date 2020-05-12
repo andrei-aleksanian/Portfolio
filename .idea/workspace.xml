@@ -3,19 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Triangle/Triangle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Triangle/Triangle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/ContactPage/ContactPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/ContactPage/ContactPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/FormFactory/Form.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/FormFactory/Form.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Triangle/Triangle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Triangle/Triangle.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Layout/Layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/Layout/Layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/Layout/Layout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/WelcomePage/WelcomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +95,7 @@
       <workItem from="1588937457670" duration="24156000" />
       <workItem from="1589112935981" duration="20559000" />
       <workItem from="1589150976143" duration="135000" />
-      <workItem from="1589198054544" duration="21404000" />
+      <workItem from="1589198054544" duration="29803000" />
     </task>
     <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
       <created>1588432099406</created>
@@ -174,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589233324004</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Header fully functional, styles left.">
+      <created>1589292606229</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589292606229</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,17 +192,18 @@
     <MESSAGE value="Almost all css refined. On track to: animating all page, adding links to footer, form error handling and better ui." />
     <MESSAGE value="Better design, problem with portfolio index, still." />
     <MESSAGE value="Header moves." />
-    <option name="LAST_COMMIT_MESSAGE" value="Header moves." />
+    <MESSAGE value="Header fully functional, styles left." />
+    <option name="LAST_COMMIT_MESSAGE" value="Header fully functional, styles left." />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="77" key="#Plugins" timestamp="1588333179458">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="277" y="77" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1588333179458" />
-    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589233321231">
+    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589292604948">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589233321231" />
+    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589292604948" />
     <state x="498" y="320" key="Github.ShareDialog" timestamp="1588357614017">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -279,10 +280,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="197" y="20" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1588347733120" />
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589233326904">
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589292608192">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589233326904" />
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589292608192" />
     <state x="491" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588440216003">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

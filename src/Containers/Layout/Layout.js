@@ -8,8 +8,40 @@ const Layout = props => {
 
     const [scrollPosition, setScrollPosition] = useState(0);
 
+    const [headerElements, setHeaderElements] = useState([
+        {
+            name: "Welcome",
+            active: true
+        },
+        {
+            name: "About",
+            active: false
+        },
+        {
+            name: "Portfolio",
+            active: false
+        },
+        {
+            name: "Contact",
+            active: false
+        }
+    ]);
+
     useEffect(() => {
+        // fixing header if we scroll through welcome page
         listenToScrollEvent();
+        console.log(scrollPosition, "[return]");
+
+        if (scrollPosition <= 30){
+            highlightNew("Welcome");
+        } else if (scrollPosition >= 30 && scrollPosition <= 60){
+            highlightNew("About");
+        } else if (scrollPosition >= 60 && scrollPosition <= 80){
+            highlightNew("Portfolio");
+        } else {
+            highlightNew("Contact");
+        }
+
     }, [scrollPosition]);
 
     const getDocHeight  =  ()  =>  {
@@ -18,7 +50,7 @@ const Layout = props => {
             document.body.offsetHeight,  document.documentElement.offsetHeight,
             document.body.clientHeight,  document.documentElement.clientHeight
         );
-    }
+    };
 
     const calculateScrollDistance = () => {
         const scrollTop = window.pageYOffset;
@@ -27,31 +59,50 @@ const Layout = props => {
 
         const  totalDocScrollLength  =  docHeight  -  windowHeight;
         setScrollPosition(Math.floor(scrollTop  /  totalDocScrollLength  *  100));
-    }
+    };
 
     const listenToScrollEvent = () => {
         document.addEventListener("scroll", () => {
             requestAnimationFrame(() => {
-                // Calculates the scroll distance
                 calculateScrollDistance();
             });
         });
     };
 
+    const highlightNew = (name) => {
+        setHeaderElements( prevState => {
+                return prevState.map(el => {
+                    if (el.name === name){
+                        return {...el, active: true};
+                    } else {
+                        return {...el, active: false};
+                    }
+                })
+            }
+        );
+    };
+
     let headerClasses = [classes.Header];
-    console.log(scrollPosition);
-    if (scrollPosition >= 30){
+    if (scrollPosition <= 30){
+        // highlightNew("Welcome");
+    } else if (scrollPosition >= 30){
         headerClasses.push(classes.Fix);
+        // highlightNew("About");
     }
 
     return (
         <Fragment>
             <header className={headerClasses.join(" ")}>
                 <ul>
-                    <li><a href="#Welcome" className={classes.active}>Welcome</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    {headerElements.map(el => {
+                        return (<li key={el.name}><a
+                            href={`#${el.name}`}
+                            onClick={() => highlightNew(el.name)}
+                            className={el.active ? classes.active : ""}>
+                            {el.name}
+                        </a></li>);
+                        })
+                    }
                 </ul>
             </header>
             {props.children}

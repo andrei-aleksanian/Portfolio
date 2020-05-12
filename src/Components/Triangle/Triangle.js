@@ -8,7 +8,7 @@ const Triangle = props => {
         stylesArr.push(classes.reverse);
     }
 
-    return <div className={stylesArr.join(" ")}></div>
+    return <div id={props.id} className={stylesArr.join(" ")}></div>
 };
 
 export default Triangle;

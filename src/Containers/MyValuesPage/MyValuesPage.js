@@ -48,10 +48,10 @@ const MyValuesPage = props => {
     }
 
     return (
-        <div id="" className={classes.MyValuesPage}>
+        <div id={props.id} className={classes.MyValuesPage}>
             <h1>My Values</h1>
             <div className={classes.ValuesBox}>
-                {values.map(v => <Value bigScreen={bigScreen} {...v}/>)}
+                {values.map(v => <Value key={v.name} bigScreen={bigScreen} {...v}/>)}
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import HomeAnimation from "./HomeAnimation/HomeAnimation";
 
 const WelcomePage = props => {
     return (
-        <div id="Welcome" className={classes.WelcomePage}>
+        <div id={props.id} className={classes.WelcomePage}>
             <div className={classes.LogoBox}>
                 <h1 className={classes.Logo}>Andrei <span>Aleksanian</span></h1>
                 <p className={classes.Slogan}>-The user always comes first</p>

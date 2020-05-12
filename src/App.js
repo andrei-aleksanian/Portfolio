@@ -10,12 +10,12 @@ function App() {
   return (
     <div>
         <Layout>
-            <WelcomePage />
+            <WelcomePage id="Welcome"/>
             <Triangle id="About"/>
             <MyValuesPage />
-            <Triangle reverse />
+            <Triangle reverse id="Portfolio" />
             <PortfolioPage />
-            <Triangle />
+            <Triangle id="Contact"/>
             <ContactPage />
             <Triangle reverse />
         </Layout>

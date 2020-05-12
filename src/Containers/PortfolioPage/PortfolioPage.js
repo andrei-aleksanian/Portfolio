@@ -55,18 +55,18 @@ const PortfolioPage = props => {
     ];
 
     return (
-        <div id="Portfolio" className={classes.PortfolioPage}>
+        <div id={props.id} className={classes.PortfolioPage}>
             <h1>Portfolio</h1>
             <div>
                 <h2 className={classes.funProjects}>Latest big projects</h2>
                 <div className={classes.PortfolioItems}>
-                    {portfolioItems.map(p => <PortfolioItem {...p} />)}
+                    {portfolioItems.map(p => <PortfolioItem key={p.name} {...p} />)}
                 </div>
             </div>
             <div className={classes.funProjects}>
                 <h2>And some fun ones...</h2>
                 <div className={classes.PortfolioItems}>
-                    {funPortfolioItems.map(p => <PortfolioItem {...p} />)}
+                    {funPortfolioItems.map(p => <PortfolioItem key={p.name} {...p} />)}
                 </div>
             </div>
         </div>

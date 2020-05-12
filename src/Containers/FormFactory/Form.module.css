@@ -89,12 +89,13 @@ a{
     .Wrapper h1{
         font-size: 3.5rem;
     }
+
     .Wrapper{
         display: flex;
         flex-flow: column;
         width: 40%;
         margin: 0 auto;
-        padding-top: 2%;
+        padding-top: 5vh;
         align-items: center;
         justify-content: center;
     }

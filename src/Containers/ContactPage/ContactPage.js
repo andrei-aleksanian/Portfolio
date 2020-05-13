@@ -1,13 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import classes from './ContactPage.module.css';
 import Form from '../FormFactory/Form';
-import axios from "axios";
 
 const ContactPage = props => {
     const [inputFields, setInputFields] = useState(null);
 
     useEffect(() => {
-        console.log("reset");
         resetInputFields();
     }, []);
 
@@ -38,7 +36,7 @@ const ContactPage = props => {
                 },
                 value: "",
                 validity: {
-                    regex: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                 },
                 valid: false,
                 touched: false

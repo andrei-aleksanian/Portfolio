@@ -1,7 +1,7 @@
 .PortfolioPage{
     display: flex;
     flex-flow: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     background: #252933;
 

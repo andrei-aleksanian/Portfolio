@@ -8,13 +8,11 @@ const Form = props => {
     const [formIsValid, setFormIsValid] = useState(true);
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [formDelivered, setFormDelivered] = useState(false);
-    const [error, updateError] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        console.log(props.inputFields);
         setInputFields(props.inputFields);
-
-    }, [props.inputFields, formDelivered]);
+    }, [props.inputFields]);
 
     const resetInputFields = () => {
         props.resetInputFields();
@@ -70,8 +68,9 @@ const Form = props => {
 
     const resetState = () => {
         setFormIsValid(true);
-        updateError(null);
+        setError(null);
         setFormSubmitted(false);
+        setTimeout(() => {setFormDelivered(false);}, 5000);
     };
 
     const submit = (e) => {
@@ -80,7 +79,7 @@ const Form = props => {
 
         setFormIsValid(formIsValid);
 
-        if (isFormValid()){
+        if (formIsValid){
             setFormSubmitted(true);
             axios({
                 method: "POST",
@@ -95,28 +94,26 @@ const Form = props => {
                 if (response.data.message === 'success') {
                     setFormDelivered(true);
                 } else if (response.data.message === 'fail') {
-                    alert("Message failed to send.")
+                    setError("Failed to deliver");
                 }
                 resetInputFields();
                 resetState();
             }).catch(err => {
-
+                setError(err);
+                setTimeout(resetState, 10000);
             });
         }
     };
 
     let message;
-
     if (!formIsValid){
-        message = <p className={[classes.message, classes.error].join(" ")}>
+        message = <p className={classes.error}>
             Please fill in all the fields correctly</p>;
     } else if (error){
-        message = <p className={[classes.message, classes.error].join(" ")}>
-            Sending message failed. Please use the links below to contact me instead.</p>;
+        message = <p className={classes.error}>
+            Sorry, sending message failed. Please use the links below to contact me instead.</p>;
     } else if (formSubmitted){
-        message =
-            <div className={classes.message}>
-                <div className={[classes.skCubeGrid].join(" ")}>
+        message = <div className={classes.skCubeGrid}>
                     <div className={[classes.skCube,classes.skCube1].join(" ")}></div>
                     <div className={[classes.skCube,classes.skCube2].join(" ")}></div>
                     <div className={[classes.skCube,classes.skCube3].join(" ")}></div>
@@ -127,10 +124,8 @@ const Form = props => {
                     <div className={[classes.skCube,classes.skCube8].join(" ")}></div>
                     <div className={[classes.skCube,classes.skCube9].join(" ")}></div>
                 </div>
-            </div>
-
     } else if (formDelivered){
-        message = <p className={[classes.message, classes.sent].join(" ")}>
+        message = <p className={classes.sent}>
             Thank you for your message!</p>;
     } else {
         message = null;
@@ -143,11 +138,6 @@ const Form = props => {
             config: inputFields[key]
         })
     }
-
-    if(inputFields){
-        console.log("form rendering", formElements[0].config.value);
-    }
-    console.log("fields rendering", inputFields);
 
     return (
         <div className={classes.Wrapper}>
@@ -164,7 +154,7 @@ const Form = props => {
                     />;
                 })}
                 <div><button>Submit</button></div>
-                {message}
+                <div className={classes.message}>{message}</div>
             </form>
         </div>
     );

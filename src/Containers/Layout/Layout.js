@@ -26,7 +26,35 @@ const Layout = props => {
     ]);
 
     useEffect(() => {
+        // Getting the scroll position
+        const getDocHeight  =  ()  =>  {
+            return Math.max(
+                document.body.scrollHeight,  document.documentElement.scrollHeight,
+                document.body.offsetHeight,  document.documentElement.offsetHeight,
+                document.body.clientHeight,  document.documentElement.clientHeight
+            );
+        };
+
+        const calculateScrollDistance = () => {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const docHeight = getDocHeight();
+
+            const  totalDocScrollLength  =  docHeight  -  windowHeight;
+            setScrollPosition(Math.floor(scrollTop  /  totalDocScrollLength  *  100));
+        };
+
+        const listenToScrollEvent = () => {
+            document.addEventListener("scroll", () => {
+                requestAnimationFrame(() => {
+                    calculateScrollDistance();
+                });
+            });
+        };
+
+        // Listening to the scroll position
         listenToScrollEvent();
+
         // Update the progress bar whenever we scroll, check it here for performance purposes
         progressBar.current.style.width = `${scrollPosition}%`;
 
@@ -42,32 +70,6 @@ const Layout = props => {
         }
 
     }, [scrollPosition]);
-
-    // Getting the scroll position
-    const getDocHeight  =  ()  =>  {
-        return Math.max(
-            document.body.scrollHeight,  document.documentElement.scrollHeight,
-            document.body.offsetHeight,  document.documentElement.offsetHeight,
-            document.body.clientHeight,  document.documentElement.clientHeight
-        );
-    };
-
-    const calculateScrollDistance = () => {
-        const scrollTop = window.pageYOffset;
-        const windowHeight = window.innerHeight;
-        const docHeight = getDocHeight();
-
-        const  totalDocScrollLength  =  docHeight  -  windowHeight;
-        setScrollPosition(Math.floor(scrollTop  /  totalDocScrollLength  *  100));
-    };
-
-    const listenToScrollEvent = () => {
-        document.addEventListener("scroll", () => {
-            requestAnimationFrame(() => {
-                calculateScrollDistance();
-            });
-        });
-    };
 
     // Highlighting new header link
     const highlightNew = (name) => {

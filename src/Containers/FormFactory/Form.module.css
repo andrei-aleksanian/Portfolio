@@ -81,6 +81,10 @@ a{
 
 .error{
     color: red;
+    animation-name: disappear;
+    animation-delay: 7s;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
 }
 
 .sent{

@@ -1,8 +1,6 @@
 .ContactPage{
     display: flex;
-    padding: 5vh 0;
-    /*height: 100vh;*/
-    justify-content: center;
+    padding: 5vh 0;justify-content: center;
 }
 
 .ContactPage h1{

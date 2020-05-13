@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import classes from './WelcomePage.module.css';
 import HomeAnimation from "./HomeAnimation/HomeAnimation";
 

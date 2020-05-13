@@ -107,14 +107,20 @@ const Layout = props => {
                         })
                     }
                 </ul>
-                <div ref={progressBar} id="progressBar" className={classes.progressBar}></div>
+                <div ref={progressBar} id="progressBar" className={classes.progressBar}/>
             </header>
             {props.children}
             <footer>
                 <ul>
-                    <li><a rel='noopener noreferrer' target="_blank" href="https://github.com/andrei-aleksanian"><img src={GitHubImage} alt="GitHub"/></a></li>
-                    <li><a rel='noopener noreferrer' target="_blank" href="https://www.linkedin.com/in/andrei-aleksanian-202a37175/"><img src={LinkedInImage} alt="LinkedIn"/></a></li>
-                    <li><a rel='noopener noreferrer' target="_blank" href="mailto:aleksanian.andrei@gmail.com"><img src={EmailImage} alt="Email"/></a></li>
+                    <li><a rel='noopener noreferrer'
+                           target="_blank" href="https://github.com/andrei-aleksanian">
+                        <img src={GitHubImage} alt="GitHub"/></a></li>
+                    <li><a rel='noopener noreferrer'
+                           target="_blank" href="https://www.linkedin.com/in/andrei-aleksanian-202a37175/">
+                        <img src={LinkedInImage} alt="LinkedIn"/></a></li>
+                    <li><a rel='noopener noreferrer'
+                           target="_blank" href="mailto:aleksanian.andrei@gmail.com">
+                        <img src={EmailImage} alt="Email"/></a></li>
                 </ul>
                 <p>Andrei Aleksanian <span>©2020</span></p>
             </footer>

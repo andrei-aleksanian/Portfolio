@@ -1,8 +1,7 @@
+/*Keeping layout on top at all times*/
 *{
     z-index: 10;
 }
-
-/* Footer */
 
 footer{
     margin: 0;

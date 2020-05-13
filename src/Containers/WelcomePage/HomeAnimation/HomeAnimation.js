@@ -18,8 +18,6 @@ class HomeAnimation extends PtsCanvas{
         this.currentStar = null;
         this.lastStar = null;
 
-        this.lastPointer = {x:0, y:0};
-
         this.default = null;
     }
 
@@ -64,7 +62,7 @@ class HomeAnimation extends PtsCanvas{
         // We are setting a flag for opacity to decrease on the current glowing star on the next loop
         // But then actually changing the opacity of the last one, which means when we swap it
         // The next one is glowing, the current one is fading
-        this.stars.forEach((star, i) => {
+        this.stars.forEach(star => {
             if (this.currentStar.pts === star.pts) {
                 star.visited = true;
             }
@@ -156,8 +154,6 @@ class HomeAnimation extends PtsCanvas{
             //saving this star as the last touched
             this.lastStar = this.stars[100];
         }
-
-        this.lastPointer = this.space.pointer;
     }
 }
 

@@ -10,9 +10,9 @@ const WelcomePage = props => {
                 <p className={classes.Slogan}>-The user always comes first</p>
             </div>
             <div className={classes.starSky}>
-                <HomeAnimation name="pts_anim" background="transparent" />
+                <HomeAnimation name="pts_anim" background={"transparent"} />
             </div>
-            <div className={classes.AnimationCover}></div>
+            <div className={classes.AnimationCover}/>
         </div>
     );
 };

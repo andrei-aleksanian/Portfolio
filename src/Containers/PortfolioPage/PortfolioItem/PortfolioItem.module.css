@@ -50,23 +50,19 @@
 }
 
 .OpenButton{
+    color: #fff;
+    background: orange;
+    border: 2px solid orange;
+    outline: none;
     cursor: pointer;
     text-decoration: none;
     margin-top: 10%;
 
-    background: #fff;
-    color: #252933;
+    font-size: 22px;
+    font-family: "Segoe UI", sans-serif;
     padding: 1% 5%;
     border-radius: 2px;
-    border: 2px solid orange;
     transition: all 0.2s ease-in-out;
-}
-
-.OpenButton:hover{
-    color: #fff;
-    background: orange;
-    border: 2px solid orange;
-    box-shadow: 0 0 20px 0 rgba(199,143,22,0.5);
 }
 
 .Image{
@@ -89,5 +85,18 @@
 @media screen and (min-width: 1000px) {
     .PortfolioItem{
         margin: 1.5rem;
+    }
+
+    .OpenButton{
+        background: #fff;
+        color: #252933;
+        border: 2px solid orange;
+    }
+
+    .OpenButton:hover{
+        color: #fff;
+        background: orange;
+        border: 2px solid orange;
+        box-shadow: 0 0 20px 0 rgba(199,143,22,0.5);
     }
 }

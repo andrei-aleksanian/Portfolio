@@ -33,6 +33,20 @@
     text-align: end;
 }
 
+.AnimationCover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    z-index: 0;
+
+    background: transparent;
+}
+
 .starSky{
     position: absolute;
     top: 0;
@@ -63,6 +77,10 @@
         align-items: center;
     }
 
+    .AnimationCover{
+        display: none;
+    }
+
     .LogoBox{
         z-index: 10;
     }
@@ -70,7 +88,6 @@
     .Logo{
         padding: 0;
         color: #fff;
-        /*font-size: 4rem;*/
         font-family: "Segoe UI", sans-serif;
     }
 
@@ -80,7 +97,6 @@
 
     .Slogan{
         color: #fff;
-        /*font-size: 1.5rem;*/
         font-style: italic;
         text-align: end;
         margin: 0.1em 0 0 1em;

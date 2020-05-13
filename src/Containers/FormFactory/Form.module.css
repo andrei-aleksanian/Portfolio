@@ -3,7 +3,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5% 5% 5%;
+    padding: 0 5% calc(5% - 40px) 5%;
 }
 
 h2{
@@ -61,10 +61,11 @@ h2{
     background-color: orange;
 }
 
-.invalidForm{
-    display: inline-block;
+.message{
+    display: block;
     padding: 0;
     margin: 0;
+    height: 40px;
 }
 
 .fullWidth{
@@ -84,6 +85,82 @@ a{
 
 .sent{
     color: green;
+    animation-name: disappear;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.skCubeGrid {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+.skCubeGrid .skCube {
+    width: 33%;
+    height: 33%;
+    background-color: #333;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.skCubeGrid .skCube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.skCubeGrid .skCube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.skCubeGrid .skCube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s; }
+.skCubeGrid .skCube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.skCubeGrid .skCube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.skCubeGrid .skCube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.skCubeGrid .skCube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s; }
+.skCubeGrid .skCube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.skCubeGrid .skCube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+      }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    } 35% {
+          -webkit-transform: scale3D(0, 0, 1);
+          transform: scale3D(0, 0, 1);
+      }
 }
 
 @media screen and (min-width:1000px) {
@@ -125,5 +202,4 @@ a{
     .form button:hover{
         box-shadow: 0 0 20px 0 rgba(199,143,22,0.5);
     }
-
 }

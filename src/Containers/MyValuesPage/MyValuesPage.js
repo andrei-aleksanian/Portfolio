@@ -47,6 +47,8 @@ const MyValuesPage = props => {
             }
     ]
 
+    // Because on mobile screens my values change structure,
+    // I render three different sets and display either the first two or only the last one with css
     return (
         <div id={props.id} className={classes.MyValuesPage}>
             <h1>My Values</h1>

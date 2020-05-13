@@ -26,10 +26,11 @@ const Layout = props => {
     ]);
 
     useEffect(() => {
-        // fixing header if we scroll through welcome page
         listenToScrollEvent();
+        // Update the progress bar whenever we scroll, check it here for performance purposes
         progressBar.current.style.width = `${scrollPosition}%`;
 
+        // Highlight a header link depending on scroll position
         if (scrollPosition <= 30){
             highlightNew("Welcome");
         } else if (scrollPosition >= 30 && scrollPosition <= 60){
@@ -42,6 +43,7 @@ const Layout = props => {
 
     }, [scrollPosition]);
 
+    // Getting the scroll position
     const getDocHeight  =  ()  =>  {
         return Math.max(
             document.body.scrollHeight,  document.documentElement.scrollHeight,
@@ -67,6 +69,7 @@ const Layout = props => {
         });
     };
 
+    // Highlighting new header link
     const highlightNew = (name) => {
         setHeaderElements( prevState => {
                 return prevState.map(el => {
@@ -82,8 +85,9 @@ const Layout = props => {
 
     const progressBar = useRef(null);
 
+    // fixing header if we scroll through welcome page
     let headerClasses = [classes.Header];
-    if (scrollPosition >= 30){
+    if (scrollPosition >= 20){
         headerClasses.push(classes.Fix);
     }
 

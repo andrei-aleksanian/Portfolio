@@ -1,27 +1,41 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import classes from './PortfolioItem.module.css';
 
 const PortfolioItem = props => {
     let [descriptionClasses, setDescriptionClasses] = useState([classes.HoverInfo].join(" "));
     let [imageClasses, setImageClasses] = useState([classes.Image, classes.opacity].join(" "));
 
-    const hoverInfo = (
-        <div className={descriptionClasses}>
-            <span className={classes.HoverInfoName}>{props.name}</span>
-            <span className={classes.HoverInfoDescription}>{props.description}</span>
-            <a className={classes.OpenButton} href={props.link} rel='noopener noreferrer' target="_blank">See</a>
-        </div>
-    );
+    // Only clicks when the opacity of description div is 1
+    const  linkClickHandler = link => {
+        let compStyles = window.getComputedStyle(descriptionRef.current);
+        if (compStyles.getPropertyValue('opacity') === '1'){
+            const win = window.open(link, '_blank');
+            win.focus();
+        }
+    };
 
+    // Swapping image and description with opacity and zIndex
     const showDescription = () => {
         setDescriptionClasses([classes.HoverInfo, classes.opacity].join(" "));
-        setImageClasses([classes.Image, classes.displayNone].join(" "));
+        setImageClasses([classes.Image].join(" "));
     };
 
     const hideDescription = () => {
-        setDescriptionClasses([classes.HoverInfo, classes.displayNone].join(" "));
+        setDescriptionClasses([classes.HoverInfo].join(" "));
         setImageClasses([classes.Image, classes.opacity].join(" "));
     };
+
+    // Hover info to show on click or hover
+    const descriptionRef = useRef(null);
+
+
+    const hoverInfo = (
+        <div ref={descriptionRef} className={descriptionClasses}>
+            <span className={classes.HoverInfoName}>{props.name}</span>
+            <span className={classes.HoverInfoDescription}>{props.description}</span>
+            <button className={classes.OpenButton} onClick={e => linkClickHandler(props.link)}>See</button>
+        </div>
+    );
 
     return (
         <div onMouseEnter={showDescription} onMouseLeave={hideDescription} className={classes.PortfolioItem}>

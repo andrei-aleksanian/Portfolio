@@ -7,11 +7,18 @@ const Form = props => {
     const [inputFields, setInputFields] = useState(null);
     const [formIsValid, setFormIsValid] = useState(true);
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [formDelivered, setFormDelivered] = useState(false);
     const [error, updateError] = useState(null);
 
     useEffect(() => {
+        console.log(props.inputFields);
         setInputFields(props.inputFields);
-    }, [props.inputFields]);
+
+    }, [props.inputFields, formDelivered]);
+
+    const resetInputFields = () => {
+        props.resetInputFields();
+    };
 
     const validateInputHandler = (inputName, value) => {
         const regex = inputFields[inputName].validity.regex;
@@ -48,7 +55,7 @@ const Form = props => {
         let formIsValid = true;
 
         let localInputFields = {...inputFields};
-        localInputFields[inputName].value = e.target.value.trim();
+        localInputFields[inputName].value = e.target.value;
         let valid = validateInputHandler(inputName, e.target.value.trim());
         localInputFields[inputName].valid = valid;
         localInputFields[inputName].touched = true;
@@ -61,38 +68,72 @@ const Form = props => {
         setFormIsValid(formIsValid);
     };
 
+    const resetState = () => {
+        setFormIsValid(true);
+        updateError(null);
+        setFormSubmitted(false);
+    };
+
     const submit = (e) => {
         e.preventDefault();
         const formIsValid = isFormValid();
-        props.onSubmit(e, formIsValid);
 
         setFormIsValid(formIsValid);
-        setFormSubmitted(true);
+
+        if (isFormValid()){
+            setFormSubmitted(true);
+            axios({
+                method: "POST",
+                url: "https://us-central1-andrei-aleksanian.cloudfunctions.net/emailMessage",
+                data: {
+                    name: inputFields["name"].value,
+                    email: inputFields["email"].value,
+                    message: inputFields["message"].value,
+                }
+            }).then((response) => {
+                console.log(response);
+                if (response.data.message === 'success') {
+                    setFormDelivered(true);
+                } else if (response.data.message === 'fail') {
+                    alert("Message failed to send.")
+                }
+                resetInputFields();
+                resetState();
+            }).catch(err => {
+
+            });
+        }
     };
 
-    let formInvalidMessage;
-    let formSentMessage;
-    let errorMessage;
+    let message;
 
     if (!formIsValid){
-        formInvalidMessage = <p className={[classes.invalidForm, classes.error].join(" ")}>
+        message = <p className={[classes.message, classes.error].join(" ")}>
             Please fill in all the fields correctly</p>;
-    } else {
-        formInvalidMessage = null;
-    }
+    } else if (error){
+        message = <p className={[classes.message, classes.error].join(" ")}>
+            Sending message failed. Please use the links below to contact me instead.</p>;
+    } else if (formSubmitted){
+        message =
+            <div className={classes.message}>
+                <div className={[classes.skCubeGrid].join(" ")}>
+                    <div className={[classes.skCube,classes.skCube1].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube2].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube3].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube4].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube5].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube6].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube7].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube8].join(" ")}></div>
+                    <div className={[classes.skCube,classes.skCube9].join(" ")}></div>
+                </div>
+            </div>
 
-    if (formSubmitted){
-        formSentMessage = <p className={[classes.invalidForm, classes.sent].join(" ")}>
+    } else if (formDelivered){
+        message = <p className={[classes.message, classes.sent].join(" ")}>
             Thank you for your message!</p>;
     } else {
-        formSentMessage = null;
-    }
-
-    if (error){
-        errorMessage = <p className={[classes.invalidForm, classes.error].join(" ")}>
-            Sending message failed. Please try again.</p>;
-    }else{
-        errorMessage = null;
+        message = null;
     }
 
     let formElements = [];
@@ -102,6 +143,11 @@ const Form = props => {
             config: inputFields[key]
         })
     }
+
+    if(inputFields){
+        console.log("form rendering", formElements[0].config.value);
+    }
+    console.log("fields rendering", inputFields);
 
     return (
         <div className={classes.Wrapper}>
@@ -117,7 +163,8 @@ const Form = props => {
                                   value={el.config.value}
                     />;
                 })}
-                <div><button>Submit</button> {formSentMessage} {formInvalidMessage} {errorMessage}</div>
+                <div><button>Submit</button></div>
+                {message}
             </form>
         </div>
     );

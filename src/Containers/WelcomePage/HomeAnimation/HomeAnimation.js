@@ -1,10 +1,10 @@
-import {Create, Pt} from 'pts/dist/es5';
+import {Create} from 'pts/dist/es5';
 import {PtsCanvas} from "react-pts-canvas";
 import Star from "./Star";
 
 class HomeAnimation extends PtsCanvas{
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.smallScreen = window.screen.width < 1000;
 
         this.stars = [];
@@ -17,6 +17,10 @@ class HomeAnimation extends PtsCanvas{
 
         this.currentStar = null;
         this.lastStar = null;
+
+        this.lastPointer = {x:0, y:0};
+
+        this.default = null;
     }
 
     _create() {
@@ -53,23 +57,23 @@ class HomeAnimation extends PtsCanvas{
                 }
             }
         } else {
-            // Tricky bit
-            // We are setting a flag for opacity to decrease on the current glowing star on the next loop
-            // But then actually changing the opacity of the last one, which means when we swap it
-            // The next one is glowing, the current one is fading
-            this.stars.forEach((star, i) => {
-                if (this.currentStar.pts === star.pts) {
-                    star.visited = true;
-                }
-            });
             // temp opacity back to default
             this.GlowingOpacity = 0.4;
         }
+        // Tricky bit
+        // We are setting a flag for opacity to decrease on the current glowing star on the next loop
+        // But then actually changing the opacity of the last one, which means when we swap it
+        // The next one is glowing, the current one is fading
+        this.stars.forEach((star, i) => {
+            if (this.currentStar.pts === star.pts) {
+                star.visited = true;
+            }
+        });
     }
 
     getFallTimerForScreen() {
         if (this.smallScreen){
-            return (Date.now() - this.startFallTime) >= 1000;
+            return (Date.now() - this.startFallTime) >= 1500;
         } else {
             return (Date.now() - this.startFallTime) >= 2000;
         }
@@ -79,14 +83,16 @@ class HomeAnimation extends PtsCanvas{
     animate(time, ftime) {
         let p = this.space.pointer;
 
-        if (!this.firstLaunch) {
-            this.stars.sort( (a,b) => {
-                return a.pts.$subtract(p).magnitudeSq() - b.pts.$subtract(p).magnitudeSq();
-            });
-        }
+        this.stars.sort( (a,b) => {
+            return a.pts.$subtract(p).magnitudeSq() - b.pts.$subtract(p).magnitudeSq();
+        });
 
         // Saving the new star touched
-        this.currentStar = this.stars[0];
+        if (!this.smallScreen && !this.firstLaunch) {
+            this.currentStar = this.stars[0];
+        } else {
+            this.currentStar = this.stars[100];
+        }
 
         // If last star is not initialised yet
         if (!this.lastStar){
@@ -118,11 +124,20 @@ class HomeAnimation extends PtsCanvas{
             }
         });
 
-        // falling on full opacity logic
-        if (this.stars[0].opacity >= 1) {
-            if (this.getFallTimerForScreen()){
-                this.startFallTime = new Date().getTime();
-                this.stars[0].falling = true;
+        // falling on full opacity
+        if (!this.smallScreen && !this.firstLaunch) {
+            if (this.stars[0].opacity >= 1) {
+                if (this.getFallTimerForScreen()) {
+                    this.startFallTime = new Date().getTime();
+                    this.stars[0].falling = true;
+                }
+            }
+        } else {
+            if (this.stars[100].opacity >= 1) {
+                if (this.getFallTimerForScreen()) {
+                    this.startFallTime = new Date().getTime();
+                    this.stars[100].falling = true;
+                }
             }
         }
 
@@ -130,10 +145,19 @@ class HomeAnimation extends PtsCanvas{
         this.updateOpacity();
 
         // glowing current star
-        this.stars[0].opacity = this.GlowingOpacity;
+        if (!this.smallScreen && !this.firstLaunch) {
+            this.stars[0].opacity = this.GlowingOpacity;
 
-        //saving this star as the last touched
-        this.lastStar = this.stars[0];
+            //saving this star as the last touched
+            this.lastStar = this.stars[0];
+        } else {
+            this.stars[100].opacity = this.GlowingOpacity;
+
+            //saving this star as the last touched
+            this.lastStar = this.stars[100];
+        }
+
+        this.lastPointer = this.space.pointer;
     }
 }
 

@@ -12,6 +12,7 @@ const WelcomePage = props => {
             <div className={classes.starSky}>
                 <HomeAnimation name="pts_anim" background="transparent" />
             </div>
+            <div className={classes.AnimationCover}></div>
         </div>
     );
 };

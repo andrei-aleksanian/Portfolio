@@ -6,8 +6,14 @@ import axios from "axios";
 const ContactPage = props => {
     const [inputFields, setInputFields] = useState(null);
 
+    useEffect(() => {
+        console.log("reset");
+        resetInputFields();
+    }, []);
+
     const resetInputFields = () => {
-        setInputFields({name: {
+        setInputFields({
+            name: {
                 inputType: "input",
                 elementConfig: {
                     type: "text",
@@ -55,37 +61,9 @@ const ContactPage = props => {
         });
     };
 
-    useEffect(() => {
-        resetInputFields();
-    }, []);
-
-    const submit = (e) => {
-        e.preventDefault();
-        axios({
-            method: "POST",
-            url: "https://us-central1-andrei-aleksanian.cloudfunctions.net/emailMessage",
-            data: {
-                name: inputFields["name"].value,
-                email: inputFields["email"].value,
-                message: inputFields["message"].value,
-            }
-        }).then((response) => {
-            console.log(response);
-            if (response.data.message === 'success') {
-
-                resetInputFields();
-            } else if (response.data.message === 'fail') {
-                alert("Message failed to send.")
-            }
-        }).catch(err => {
-
-        });
-    }
-
-
     return (
         <div className={classes.ContactPage}>
-            <Form onSubmit={submit} inputFields={inputFields} title="Contact Me"/>
+            <Form title="Contact Me" inputFields={inputFields} resetInputFields={resetInputFields}/>
         </div>
     );
 }

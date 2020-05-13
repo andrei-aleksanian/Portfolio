@@ -5,13 +5,11 @@ import ChatNowImage from '../../assets/img/Portfolio/ChatNow.jpg';
 import WeatherTodayImage from '../../assets/img/Portfolio/WeatherToday.jpg';
 import CorgiLandImage from '../../assets/img/Portfolio/CorgiLand.jpg';
 import FriendsPortfolioImage from '../../assets/img/Portfolio/FriendsPortfolio.jpg';
-import GitHubIocn from '../../assets/img/Contact/GitHub.svg';
+import GitHubIcon from '../../assets/img/Contact/GitHub.svg';
 
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
 const PortfolioPage = props => {
-    // const bigScreen = window.screen.width > 1000;
-
     let portfolioItems = [
         {
             name: "BHome",
@@ -50,7 +48,7 @@ const PortfolioPage = props => {
             name: "GitHub",
             description: "I always have many more!",
             link: "https://github.com/andrei-aleksanian",
-            img: GitHubIocn
+            img: GitHubIcon
         }
     ];
 
@@ -63,6 +61,7 @@ const PortfolioPage = props => {
                     {portfolioItems.map(p => <PortfolioItem key={p.name} {...p} />)}
                 </div>
             </div>
+            {/*Fun projects are hidden on mobile for simplicity*/}
             <div className={classes.funProjects}>
                 <h2>And some fun ones...</h2>
                 <div className={classes.PortfolioItems}>

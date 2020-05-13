@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import classes from "./Form.module.css";
 import Input from "./FormValidation/InputValidated";
 import axios from 'axios';
+import sendEmail from "./sendEmailCredentials";
 
 const Form = props => {
     const [inputFields, setInputFields] = useState(null);
@@ -83,14 +84,13 @@ const Form = props => {
             setFormSubmitted(true);
             axios({
                 method: "POST",
-                url: "https://us-central1-andrei-aleksanian.cloudfunctions.net/emailMessage",
+                url: sendEmail,
                 data: {
                     name: inputFields["name"].value,
                     email: inputFields["email"].value,
                     message: inputFields["message"].value,
                 }
             }).then((response) => {
-                console.log(response);
                 if (response.data.message === 'success') {
                     setFormDelivered(true);
                 } else if (response.data.message === 'fail') {

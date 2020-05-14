@@ -93,7 +93,7 @@ const Layout = props => {
         headerClasses.push(classes.Fix);
     }
 
-    const footerAnimation = {
+    const footerAnimation = window.screen.width <= 1000 ? {} : {
         "data-aos": "fade-in",
         "data-aos-once":"true",
         "data-aos-duration":"2000"

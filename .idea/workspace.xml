@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Containers/FormFactory/sendEmailCredentials.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Contact/Email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Contact/GitHub.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Contact/LinkedIn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Portfolio/BHome.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Portfolio/ChatNow.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Portfolio/CorgiLand.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Portfolio/FriendsPortfolio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Portfolio/WeatherToday.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Values/Creativity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Values/OriginalDesign.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Values/ProgrammingStandards.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Values/ResponsiveDesign.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/Values/UserExperience.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/FormFactory/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/FormFactory/Form.js" afterDir="false" />
+    <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="v.1.0.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +90,7 @@
       <workItem from="1588937457670" duration="24156000" />
       <workItem from="1589112935981" duration="20559000" />
       <workItem from="1589150976143" duration="135000" />
-      <workItem from="1589198054544" duration="71575000" />
+      <workItem from="1589198054544" duration="74068000" />
     </task>
     <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
       <created>1588432099406</created>
@@ -218,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589410933104</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="v.1.0.0">
+      <created>1589411588256</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1589411588256</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,17 +235,18 @@
     <MESSAGE value="Form animations done, only error message left to do." />
     <MESSAGE value="Form done. Favicon needed. And code clean-up." />
     <MESSAGE value="Manifests and favicon completed. Code cleaned up." />
-    <option name="LAST_COMMIT_MESSAGE" value="Manifests and favicon completed. Code cleaned up." />
+    <MESSAGE value="v.1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.1.0.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="277" y="77" key="#Plugins" timestamp="1588333179458">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="277" y="77" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1588333179458" />
-    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589410932125">
+    <state x="168" y="0" key="CommitChangelistDialog2" timestamp="1589411707235">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589410932125" />
+    <state x="168" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589411707235" />
     <state x="498" y="320" key="Github.ShareDialog" timestamp="1588357614017">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -329,10 +323,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="197" y="20" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1588347733120" />
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589410937239">
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2" timestamp="1589411711893">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589410937239" />
+    <state x="277" y="165" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589411711893" />
     <state x="491" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588440216003">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

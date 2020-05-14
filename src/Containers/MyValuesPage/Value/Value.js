@@ -2,7 +2,15 @@ import React from 'react';
 import classes from './Value.module.css';
 
 const Value = props => {
-    return <div className={classes.Value}>
+    let animation = {...props.animation};
+
+    if (props.name === `<span>Responsive</span> Design`){
+        animation["data-aos"] = "fade-up-right";
+    } else if (props.name ===  `<span>Creativity</span>`){
+        animation["data-aos"] = "fade-up-left";
+    }
+
+    return <div {...animation} className={classes.Value}>
         <div className={classes.Border}>
             <img src={props.image} alt={props.name}/>
             <div dangerouslySetInnerHTML={{__html: props.name}}/>

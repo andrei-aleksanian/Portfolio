@@ -3,9 +3,15 @@ import classes from './WelcomePage.module.css';
 import HomeAnimation from "./HomeAnimation/HomeAnimation";
 
 const WelcomePage = props => {
+    const topOfPageAnimation = {
+        "data-aos": "fade-in",
+        "data-aos-once":"true",
+        "data-aos-duration":"2000"
+    };
+
     return (
         <div id={props.id} className={classes.WelcomePage}>
-            <div className={classes.LogoBox}>
+            <div className={classes.LogoBox} {...topOfPageAnimation}>
                 <h1 className={classes.Logo}>Andrei <span>Aleksanian</span></h1>
                 <p className={classes.Slogan}>-The user always comes first</p>
             </div>

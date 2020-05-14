@@ -37,8 +37,18 @@ const PortfolioItem = props => {
         </div>
     );
 
+    let animation = {...props.animation};
+
+    if (props.name === "Friend's Portfolio"){
+        animation["data-aos"] = "fade-up-right";
+    } else if (props.name === "GitHub"){
+        animation["data-aos"] = "fade-up-left";
+    } else if (props.name === "CorgiLand"){
+        animation["data-aos"] = "fade-up";
+    }
+
     return (
-        <div onMouseEnter={showDescription} onMouseLeave={hideDescription} className={classes.PortfolioItem}>
+        <div {...animation} onMouseEnter={showDescription} onMouseLeave={hideDescription} className={classes.PortfolioItem}>
             {hoverInfo}
             <img className={imageClasses} src={props.img} alt={props.name}/>
         </div>

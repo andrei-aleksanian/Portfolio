@@ -45,21 +45,31 @@ const MyValuesPage = props => {
                 description: `<div>I think developers should be able to find creative ways to <span>engage</span> with the user.</div>`,
                 image: CreativityImage,
             }
-    ]
+    ];
+
+    const bottomOfPageAnimations = {
+        "data-aos": "fade-up",
+        "data-aos-once":"true"
+    };
+
+    const topOfPageAnimation = {
+        "data-aos": "fade-in",
+        "data-aos-once":"true"
+    };
 
     // Because on mobile screens my values change structure,
     // I render three different sets and display either the first two or only the last one with css
     return (
-        <div id={props.id} className={classes.MyValuesPage}>
-            <h1>My Values</h1>
-            <div className={classes.smallValuesBox}>
+        <div id={props.id} className={classes.MyValuesPage} >
+            <h1 {...topOfPageAnimation}>My Values</h1>
+            <div className={classes.smallValuesBox} {...bottomOfPageAnimations}>
                 {values.map(v => <SmallValue key={v.name} {...v}/>)}
             </div>
-            <div className={classes.ValuesBox}>
-                {values.map(v => <Value key={v.name} {...v}/>)}
+            <div className={classes.ValuesBox} >
+                {values.map(v => <Value animation={topOfPageAnimation} key={v.name} {...v}/>)}
             </div>
             <div className={[classes.ValuesBox].join(" ")}>
-                {addValues.map(v => <Value key={v.name} {...v}/>)}
+                {addValues.map(v => <Value animation={bottomOfPageAnimations} key={v.name} {...v}/>)}
             </div>
         </div>
     );

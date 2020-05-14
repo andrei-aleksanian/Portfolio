@@ -139,8 +139,14 @@ const Form = props => {
         })
     }
 
+    const topOfPageAnimation = {
+        "data-aos": "fade-up",
+        "data-aos-once":"true",
+        "data-aos-duration":"2000"
+    };
+
     return (
-        <div className={classes.Wrapper}>
+        <div {...topOfPageAnimation} className={classes.Wrapper}>
             <h1>{props.title}</h1>
             <form className={classes.form} onSubmit={submit}>
                 {formElements.map(el => {

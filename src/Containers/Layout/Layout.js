@@ -93,6 +93,12 @@ const Layout = props => {
         headerClasses.push(classes.Fix);
     }
 
+    const footerAnimation = {
+        "data-aos": "fade-in",
+        "data-aos-once":"true",
+        "data-aos-duration":"2000"
+    };
+
     return (
         <Fragment>
             <header className={headerClasses.join(" ")}>
@@ -114,13 +120,13 @@ const Layout = props => {
                 <ul>
                     <li><a rel='noopener noreferrer'
                            target="_blank" href="https://github.com/andrei-aleksanian">
-                        <img src={GitHubImage} alt="GitHub"/></a></li>
+                        <img {...footerAnimation} src={GitHubImage} alt="GitHub"/></a></li>
                     <li><a rel='noopener noreferrer'
                            target="_blank" href="https://www.linkedin.com/in/andrei-aleksanian-202a37175/">
-                        <img src={LinkedInImage} alt="LinkedIn"/></a></li>
+                        <img {...footerAnimation} src={LinkedInImage} alt="LinkedIn"/></a></li>
                     <li><a rel='noopener noreferrer'
                            target="_blank" href="mailto:aleksanian.andrei@gmail.com">
-                        <img src={EmailImage} alt="Email"/></a></li>
+                        <img {...footerAnimation} src={EmailImage} alt="Email"/></a></li>
                 </ul>
                 <p>Andrei Aleksanian <span>©2020</span></p>
             </footer>

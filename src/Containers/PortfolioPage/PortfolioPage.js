@@ -52,20 +52,32 @@ const PortfolioPage = props => {
         }
     ];
 
+    const titleAnimation = {
+        "data-aos": "fade-in",
+        "data-aos-once":"true",
+        "data-aos-duration":"2000"
+    };
+
+    const portfolioItemAnimation = {
+        "data-aos": "fade-in",
+        "data-aos-once":"true",
+        "data-aos-duration":"1000"
+    };
+
     return (
         <div className={classes.PortfolioPage}>
-            <h1>Portfolio</h1>
+            <h1 {...titleAnimation}>Portfolio</h1>
             <div>
-                <h2 className={classes.funProjects}>Latest big projects</h2>
+                <h2 {...titleAnimation} className={classes.funProjects}>Latest big projects</h2>
                 <div className={classes.PortfolioItems}>
-                    {portfolioItems.map(p => <PortfolioItem key={p.name} {...p} />)}
+                    {portfolioItems.map(p => <PortfolioItem animation={portfolioItemAnimation} key={p.name} {...p} />)}
                 </div>
             </div>
             {/*Fun projects are hidden on mobile for simplicity*/}
             <div className={classes.funProjects}>
-                <h2>And some fun ones...</h2>
+                <h2 {...titleAnimation}>And some fun ones...</h2>
                 <div className={classes.PortfolioItems}>
-                    {funPortfolioItems.map(p => <PortfolioItem key={p.name} {...p} />)}
+                    {funPortfolioItems.map(p => <PortfolioItem animation={portfolioItemAnimation} key={p.name} {...p} />)}
                 </div>
             </div>
         </div>

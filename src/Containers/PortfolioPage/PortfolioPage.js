@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from "./PortfolioPage.module.css";
 import BHomeImage from '../../assets/img/Portfolio/BHome.jpg';
-import ChatNowImage from '../../assets/img/Portfolio/ChatNow.jpg';
+import CvetyotamiraImage from '../../assets/img/Portfolio/cvetyotamira2.png';
 import WeatherTodayImage from '../../assets/img/Portfolio/WeatherToday.jpg';
 import CorgiLandImage from '../../assets/img/Portfolio/CorgiLand.jpg';
 import FriendsPortfolioImage from '../../assets/img/Portfolio/FriendsPortfolio.jpg';
@@ -9,19 +9,19 @@ import GitHubIcon from '../../assets/img/Contact/GitHub.svg';
 
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
-const PortfolioPage = props => {
+const PortfolioPage = () => {
     let portfolioItems = [
+        {
+            name: "Flower Shop",
+            description: "React & Redux / NodeJS & MongoDB",
+            link: "https://cvetyotamira.ru",
+            img: CvetyotamiraImage
+        },
         {
             name: "BHome",
             description: "React & Redux / Google Firebase",
             link: "https://bhome-946b6.web.app/",
             img: BHomeImage
-        },
-        {
-            name: "ChatNow",
-            description: "ES6+ JS / Heroku / Google Firebase",
-            link: "https://chat-now-app.herokuapp.com/",
-            img: ChatNowImage
         },
         {
             name: "WeatherToday",

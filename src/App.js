@@ -9,6 +9,7 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 
 const App  = () => {
+  // Animations setup
     useEffect(() => {
         AOS.init({
             duration: 1200

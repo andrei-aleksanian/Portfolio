@@ -33,7 +33,7 @@ const PortfolioItem = props => {
         <div ref={descriptionRef} className={descriptionClasses}>
             <span className={classes.HoverInfoName}>{props.name}</span>
             <span className={classes.HoverInfoDescription}>{props.description}</span>
-            <button className={classes.OpenButton} onClick={e => linkClickHandler(props.link)}>See</button>
+            <button className={classes.OpenButton} onClick={e => linkClickHandler(props.link)}>Open</button>
         </div>
     );
 

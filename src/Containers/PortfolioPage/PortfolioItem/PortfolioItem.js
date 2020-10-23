@@ -2,8 +2,8 @@ import React, {useRef, useState} from 'react';
 import classes from './PortfolioItem.module.css';
 
 const PortfolioItem = props => {
-    let [descriptionClasses, setDescriptionClasses] = useState([classes.HoverInfo].join(" "));
-    let [imageClasses, setImageClasses] = useState([classes.Image, classes.opacity].join(" "));
+    let [descriptionClasses, setDescriptionClasses] = useState([classes.HoverInfo]);
+    let [imageClasses, setImageClasses] = useState([classes.Image, classes.opacity]);
 
     // Only clicks when the opacity of description div is 1
     const  linkClickHandler = link => {
@@ -16,21 +16,24 @@ const PortfolioItem = props => {
 
     // Swapping image and description with opacity and zIndex
     const showDescription = () => {
-        setDescriptionClasses([classes.HoverInfo, classes.opacity].join(" "));
-        setImageClasses([classes.Image].join(" "));
+        setDescriptionClasses([classes.HoverInfo, classes.opacity]);
+        setImageClasses([classes.Image]);
     };
 
     const hideDescription = () => {
-        setDescriptionClasses([classes.HoverInfo].join(" "));
-        setImageClasses([classes.Image, classes.opacity].join(" "));
+        setDescriptionClasses([classes.HoverInfo]);
+        setImageClasses([classes.Image, classes.opacity]);
     };
 
     // Hover info to show on click or hover
     const descriptionRef = useRef(null);
 
+  const featuredClasses = (normalClasses = [""], featuredClass = "") => {
+    return [...normalClasses, props.featured ? featuredClass : ""].join(" ")
+  }
 
     const hoverInfo = (
-        <div ref={descriptionRef} className={descriptionClasses}>
+        <div ref={descriptionRef} className={featuredClasses(descriptionClasses, classes.HoverInfoFeatured)}>
             <span className={classes.HoverInfoName}>{props.name}</span>
             <span className={classes.HoverInfoDescription}>{props.description}</span>
             <button className={classes.OpenButton} onClick={e => linkClickHandler(props.link)}>Open</button>
@@ -39,18 +42,18 @@ const PortfolioItem = props => {
 
     let animation = {...props.animation};
 
-    if (props.name === "Friend's Portfolio"){
+    if (props.name === "BHome"){
         animation["data-aos"] = "fade-up-right";
     } else if (props.name === "GitHub"){
         animation["data-aos"] = "fade-up-left";
-    } else if (props.name === "CorgiLand"){
+    } else if (props.name === "WeatherToday"){
         animation["data-aos"] = "fade-up";
     }
 
     return (
-        <div {...animation} onMouseEnter={showDescription} onMouseLeave={hideDescription} className={classes.PortfolioItem}>
+        <div {...animation} onMouseEnter={showDescription} onMouseLeave={hideDescription} className={featuredClasses([classes.PortfolioItem], classes.FeaturedItem)}>
             {hoverInfo}
-            <img className={imageClasses} src={props.img} alt={props.name}/>
+            <img className={featuredClasses(imageClasses, classes.FeaturedImage)} src={props.img} alt={props.name}/>
         </div>
     );
 };

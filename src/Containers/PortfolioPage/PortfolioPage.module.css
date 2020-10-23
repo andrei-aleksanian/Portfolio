@@ -13,8 +13,17 @@
     color: #fff;
 }
 
+.ProjectRow{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .funProjects{
-    display: none;
+    /*display: none;*/
 }
 
 .PortfolioPage h2{
@@ -30,11 +39,18 @@
     align-items: center;
 }
 
+.FunProjectsHeading{
+  font-size: 1.5rem!important;
+}
+
 @media screen and (min-width: 1000px) {
     .PortfolioItems{
         flex-flow: row;
         align-items: center;
     }
+  .FunProjectsHeading{
+    font-size: 2rem!important;
+  }
 
     .funProjects{
         display: block;

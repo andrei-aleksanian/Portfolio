@@ -3,46 +3,33 @@ import classes from "./PortfolioPage.module.css";
 import BHomeImage from '../../assets/img/Portfolio/BHome.jpg';
 import CvetyotamiraImage from '../../assets/img/Portfolio/cvetyotamira2.png';
 import WeatherTodayImage from '../../assets/img/Portfolio/WeatherToday.jpg';
-import CorgiLandImage from '../../assets/img/Portfolio/CorgiLand.jpg';
-import FriendsPortfolioImage from '../../assets/img/Portfolio/FriendsPortfolio.jpg';
 import GitHubIcon from '../../assets/img/Contact/GitHub.svg';
 
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
 const PortfolioPage = () => {
-    let portfolioItems = [
+    let featuredItem =
         {
-            name: "Flower Shop",
-            description: "React & Redux / NodeJS & MongoDB",
+            name: "Flower Shop For A Client In Russia",
+            description: "React & Redux / NodeJS(ExpressJS) & MongoDB",
+            featuredDescription: "A full stack application built by me for a client in Russia. Includes a fully manageable database with an admin panel and is focused on delivering great User Experience to the users",
             link: "https://cvetyotamira.ru",
-            img: CvetyotamiraImage
-        },
-        {
-            name: "BHome",
-            description: "React & Redux / Google Firebase",
-            link: "https://bhome-946b6.web.app/",
-            img: BHomeImage
-        },
-        {
-            name: "WeatherToday",
-            description: "ES6+ JS / Heroku",
-            link: "https://weather-forecast-today.herokuapp.com/",
-            img: WeatherTodayImage
-        }
-    ];
+            img: CvetyotamiraImage,
+          featured: true
+        };
 
     let funPortfolioItems = [
         {
-            name: "Friend's Portfolio",
-            description: "React / Google Firebase",
-            link: "https://arthur-7fd5d.web.app/",
-            img: FriendsPortfolioImage
+          name: "BHome",
+          description: "React & Redux / Google Firebase",
+          link: "https://bhome-946b6.web.app/",
+          img: BHomeImage
         },
         {
-            name: "CorgiLand",
-            description: "React / Google Firebase",
-            link: "https://corgiland-b82fb.web.app/",
-            img: CorgiLandImage
+          name: "WeatherToday",
+          description: "ES6+ JS / Heroku",
+          link: "https://weather-forecast-today.herokuapp.com/",
+          img: WeatherTodayImage
         },
         {
             name: "GitHub",
@@ -67,15 +54,15 @@ const PortfolioPage = () => {
     return (
         <div className={classes.PortfolioPage}>
             <h1 {...titleAnimation}>Portfolio</h1>
-            <div>
-                <h2 {...titleAnimation} className={classes.funProjects}>Latest big projects</h2>
+            <div className={classes.ProjectRow}>
+                <h2 {...titleAnimation} className={classes.featuredProjectHeading}>My Latest Big Project</h2>
                 <div className={classes.PortfolioItems}>
-                    {portfolioItems.map(p => <PortfolioItem animation={portfolioItemAnimation} key={p.name} {...p} />)}
+                    {<PortfolioItem animation={portfolioItemAnimation} key={featuredItem.name} {...featuredItem} />}
                 </div>
             </div>
             {/*Fun projects are hidden on mobile for simplicity*/}
             <div className={classes.funProjects}>
-                <h2 {...titleAnimation}>And some fun ones...</h2>
+                <h2 {...titleAnimation} className={classes.FunProjectsHeading}>And some little fun ones here...</h2>
                 <div className={classes.PortfolioItems}>
                     {funPortfolioItems.map(p => <PortfolioItem animation={portfolioItemAnimation} key={p.name} {...p} />)}
                 </div>

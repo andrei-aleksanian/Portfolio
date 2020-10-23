@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/MyValuesPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/MyValuesPage/Value/Value.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Containers" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -65,7 +63,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -117,7 +115,8 @@
       <workItem from="1589150976143" duration="135000" />
       <workItem from="1589198054544" duration="81492000" />
       <workItem from="1589903381994" duration="968000" />
-      <workItem from="1601829524793" duration="3323000" />
+      <workItem from="1601829524793" duration="4028000" />
+      <workItem from="1603446963942" duration="5569000" />
     </task>
     <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
       <created>1588432099406</created>
@@ -302,21 +301,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Favicons updated." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1396" height="243" key="GridCell.Tab.0.bottom" timestamp="1601830790870">
+    <state width="1396" height="243" key="GridCell.Tab.0.bottom" timestamp="1603449761524">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601830790870" />
-    <state width="1396" height="243" key="GridCell.Tab.0.center" timestamp="1601830790869">
+    <state width="1396" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603449761524" />
+    <state width="1396" height="243" key="GridCell.Tab.0.center" timestamp="1603449761522">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601830790869" />
-    <state width="1396" height="243" key="GridCell.Tab.0.left" timestamp="1601830790868">
+    <state width="1396" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603449761522" />
+    <state width="1396" height="243" key="GridCell.Tab.0.left" timestamp="1603449761521">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601830790868" />
-    <state width="1396" height="243" key="GridCell.Tab.0.right" timestamp="1601830790869">
+    <state width="1396" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603449761521" />
+    <state width="1396" height="243" key="GridCell.Tab.0.right" timestamp="1603449761523">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601830790869" />
+    <state width="1396" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603449761523" />
+    <state x="220" y="89" key="SettingsEditor" timestamp="1603447152587">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="220" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1603447152587" />
   </component>
 </project>

@@ -13,7 +13,7 @@ const PortfolioPage = () => {
             name: "Flower Shop For A Client In Russia",
             description: "React & Redux / NodeJS(ExpressJS) & MongoDB",
             featuredDescription: "A full stack application built by me for a client in Russia. Includes a fully manageable database with an admin panel and is focused on delivering great User Experience to the users",
-            link: "https://cvetyotamira.ru",
+            link: "https://cvetyotamira.herokuapp.com/",
             img: CvetyotamiraImage,
           featured: true
         };

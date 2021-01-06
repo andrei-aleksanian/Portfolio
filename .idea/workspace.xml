@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3854b05-8ccd-4560-8de0-d7b67ac2c9da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioItem/PortfolioItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PortfolioPage/PortfolioPage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -93,6 +94,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -116,7 +118,8 @@
       <workItem from="1589198054544" duration="81492000" />
       <workItem from="1589903381994" duration="968000" />
       <workItem from="1601829524793" duration="4028000" />
-      <workItem from="1603446963942" duration="5569000" />
+      <workItem from="1603446963942" duration="5842000" />
+      <workItem from="1609945017839" duration="285000" />
     </task>
     <task id="LOCAL-00001" summary="Working shine ad fade effect for 2 stars.">
       <created>1588432099406</created>
@@ -262,7 +265,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -301,22 +304,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Favicons updated." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1396" height="243" key="GridCell.Tab.0.bottom" timestamp="1603449761524">
+    <state width="1396" height="243" key="GridCell.Tab.0.bottom" timestamp="1603453495167">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603449761524" />
-    <state width="1396" height="243" key="GridCell.Tab.0.center" timestamp="1603449761522">
+    <state width="1396" height="243" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603453495167" />
+    <state width="1396" height="243" key="GridCell.Tab.0.center" timestamp="1603453495166">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603449761522" />
-    <state width="1396" height="243" key="GridCell.Tab.0.left" timestamp="1603449761521">
+    <state width="1396" height="243" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603453495166" />
+    <state width="1396" height="243" key="GridCell.Tab.0.left" timestamp="1603453495165">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603449761521" />
-    <state width="1396" height="243" key="GridCell.Tab.0.right" timestamp="1603449761523">
+    <state width="1396" height="243" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603453495165" />
+    <state width="1396" height="243" key="GridCell.Tab.0.right" timestamp="1603453495167">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1396" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603449761523" />
+    <state width="1396" height="243" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603453495167" />
     <state x="220" y="89" key="SettingsEditor" timestamp="1603447152587">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

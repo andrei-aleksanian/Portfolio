@@ -1,141 +1,151 @@
-
-.PortfolioItem{
+:root {
   --normalHeight: 12rem;
-    width: 17rem;
-    height: var(--normalHeight);
-    margin: 0.5rem 0;
-
-    border-radius: 2px;
-    border: 2px solid orange;
-    padding: 0;
-    transition: all 0.3s ease-in-out;
-
-    overflow: hidden;
+  --featuredHeight: 14rem;
+  --normalWidth: 17rem;
+  --featuredWidth: 30rem;
 }
 
-.FeaturedItem{
-  --featuredHeight: 60vw;
-  width: 90vw;
+.PortfolioItem {
+  width: var(--normalWidth);
+  height: var(--normalHeight);
+  margin: 0.5rem 0;
+
+  border-radius: 2px;
+  border: 2px solid orange;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+
+  overflow: hidden;
+}
+
+.FeaturedItem {
+  width: 90%;
+  max-width: var(--featuredWidth);
   height: var(--featuredHeight);
 }
 
-.HoverInfo{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: calc(100% - 2rem);
-    height: calc(100% - 2rem);
-    margin: 0;
+.HoverInfo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  margin: 0;
 
-    background: #fbfbfb;
-    line-height: 2rem;
+  background: #fbfbfb;
+  line-height: 2rem;
 
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 
-    font-size: 22px;
-    padding: 1rem;
+  font-size: 22px;
+  padding: 1rem;
 
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 
-    z-index: 0;
+  z-index: 0;
 }
 
-.HoverInfoFeatured{
+.HoverInfoFeatured {
   justify-content: center;
 }
 
-.HoverInfoName, .HoverInfoDescription, .OpenButton{
-    padding:0;
-    margin: 0;
-    display: block;
-    text-align: center;
+.HoverInfoName,
+.HoverInfoDescription,
+.OpenButton {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
 }
 
-.HoverInfoName{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    color: #252933;
+.HoverInfoName {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  color: #252933;
 }
 
-.HoverInfoDescription{
-    font-size: 0.7em;
+.HoverInfoDescription {
+  font-size: 0.7em;
 }
 
-.OpenButton{
-    color: #fff;
-    background: orange;
-    border: 2px solid orange;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 10px;
+.OpenButton {
+  color: #fff;
+  background: orange;
+  border: 2px solid orange;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
 
-    font-size: 20px;
-    font-family: "Segoe UI", sans-serif;
-    padding: 0.3em 0.6em;
-    border-radius: 2px;
-    transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  font-family: "Segoe UI", sans-serif;
+  padding: 0.3em 0.6em;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
 }
 
-.HoverInfoFeatured .OpenButton{
+.HoverInfoFeatured .OpenButton {
   font-size: 24px;
   padding: 0.3em 0.6em;
 }
 
-.HoverInfoFeatured .HoverInfoDescription{
+.HoverInfoFeatured .HoverInfoDescription {
   font-size: 1.1rem;
   margin: 10px 0 0;
 }
 
-.Image{
-    position: relative;
-    top: calc(var(--normalHeight) * -1);
-    left: 0;
-    width: 100%;
-    height: 100%;
+.Image {
+  position: relative;
+  top: calc(var(--normalHeight) * -1);
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    z-index: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
 }
 
-.FeaturedImage{
+.FeaturedImage {
   top: calc(var(--featuredHeight) * -1);
 }
 
-.opacity{
-    z-index: 9999;
-    opacity: 1;
+.opacity {
+  z-index: 9999;
+  opacity: 1;
 }
 
 @media screen and (min-width: 1000px) {
-    .PortfolioItem{
-        margin: 1.5rem;
-    }
-
-  .FeaturedItem{
-    --featuredHeight: 21rem;
-    width: 30rem;
+  :root {
+    --normalHeight: 11rem;
+    --featuredHeight: 18rem;
+    --normalWidth: 17rem;
+    --featuredWidth: 30rem;
   }
 
-  .HoverInfoFeatured .HoverInfoDescription{
+  .PortfolioItem {
+    margin: 1.5rem;
+  }
+
+  .HoverInfoFeatured .HoverInfoDescription {
     font-size: 1.1rem;
     margin: 20px 0;
   }
 
-  .OpenButton{
-        background: #fff;
-        color: #252933;
-        border: 2px solid orange;
-    }
+  .OpenButton {
+    background: #fff;
+    color: #252933;
+    border: 2px solid orange;
+  }
 
-    .OpenButton:hover{
-        color: #fff;
-        background: orange;
-        border: 2px solid orange;
-        box-shadow: 0 0 20px 0 rgba(199,143,22,0.5);
-    }
+  .OpenButton:hover {
+    color: #fff;
+    background: orange;
+    border: 2px solid orange;
+    box-shadow: 0 0 20px 0 rgba(199, 143, 22, 0.5);
+  }
 }

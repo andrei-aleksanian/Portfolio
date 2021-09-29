@@ -1,7 +1,9 @@
 import React, {useRef, useState} from 'react';
+import { useHistory } from 'react-router-dom';
 import classes from './PortfolioItem.module.css';
 
 const PortfolioItem = props => {
+    const history = useHistory();
     let [descriptionClasses, setDescriptionClasses] = useState([classes.HoverInfo]);
     let [imageClasses, setImageClasses] = useState([classes.Image, classes.opacity]);
 
@@ -9,10 +11,10 @@ const PortfolioItem = props => {
     const  linkClickHandler = link => {
         let compStyles = window.getComputedStyle(descriptionRef.current);
         if (compStyles.getPropertyValue('opacity') === '1'){
-            const win = window.open(link, '_blank');
-            win.focus();
+            history.push(`/project/${props.id}`)
         }
     };
+
 
     // Swapping image and description with opacity and zIndex
     const showDescription = () => {
@@ -35,8 +37,8 @@ const PortfolioItem = props => {
     const hoverInfo = (
         <div ref={descriptionRef} className={featuredClasses(descriptionClasses, classes.HoverInfoFeatured)}>
             <span className={classes.HoverInfoName}>{props.name}</span>
-            <span className={classes.HoverInfoDescription}>{props.description}</span>
-            <button className={classes.OpenButton} onClick={e => linkClickHandler(props.link)}>Open</button>
+            <span className={classes.HoverInfoDescription}>{props.techStackPar}</span>
+            <button className={classes.OpenButton} onClick={() => linkClickHandler()}>Open</button>
         </div>
     );
 
@@ -53,7 +55,7 @@ const PortfolioItem = props => {
     return (
         <div {...animation} onMouseEnter={showDescription} onMouseLeave={hideDescription} className={featuredClasses([classes.PortfolioItem], classes.FeaturedItem)}>
             {hoverInfo}
-            <img className={featuredClasses(imageClasses, classes.FeaturedImage)} src={props.img} alt={props.name}/>
+            <img className={featuredClasses(imageClasses, classes.FeaturedImage)} src={props.preview} alt={props.name}/>
         </div>
     );
 };

@@ -1,58 +1,56 @@
-.PortfolioPage{
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    background: #252933;
+.PortfolioPage {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #252933;
 
-    padding: 2vh 0 0;
+  padding: 2vh 0 0;
 }
 
-.PortfolioPage h1{
-    font-size: 3.5rem;
-    color: #fff;
+.PortfolioPage h1 {
+  font-size: 3.5rem;
+  color: #fff;
 }
 
-.ProjectRow{
+.ProjectRow {
   width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-
 }
 
-.funProjects{
-    /*display: none;*/
+.PortfolioPage h2 {
+  margin-top: 1rem;
+  text-align: start;
+  font-size: 2rem;
+  color: #fff;
 }
 
-.PortfolioPage h2{
-    margin-top: 1rem;
-    text-align: start;
-    font-size: 2rem;
-    color: #fff;
+.PortfolioItems {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
-.PortfolioItems{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.FunProjectsHeading{
-  font-size: 1.5rem!important;
+.FunProjectsHeading {
+  font-size: 1.5rem !important;
 }
 
 @media screen and (min-width: 1000px) {
-    .PortfolioItems{
-        flex-flow: row;
-        align-items: center;
-    }
-  .FunProjectsHeading{
-    font-size: 2rem!important;
+  .PortfolioItems {
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-    .funProjects{
-        display: block;
-    }
+  .FunProjectsHeading {
+    font-size: 2rem !important;
+  }
+
+  .funProjects {
+    display: block;
+  }
 }

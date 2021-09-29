@@ -3,7 +3,7 @@ import Value from "./Value/Value";
 import SmallValue from "./Value/SmallValue";
 import UXImage from '../../assets/img/Values/UserExperience.svg';
 import ProgrammingStandardsImage from '../../assets/img/Values/ProgrammingStandards.svg';
-import OriginalDesignImage from '../../assets/img/Values/OriginalDesign.svg';
+import OriginalDesignImage from '../../assets/img/Values/test.svg';
 import ResponsiveDesignImage from '../../assets/img/Values/ResponsiveDesign.png';
 import CreativityImage from '../../assets/img/Values/Creativity.png';
 import ModernFrameworksImage from '../../assets/img/Values/ModernFrameworks.svg';
@@ -19,12 +19,12 @@ const MyValuesPage = props => {
         },
         {
             name: `<span>Programming</span> Standards`,
-            description: `<div>Up-to-date, <span>maintainable code</span> is what makes outstanding websites reality.</div>`,
+            description: `<div>Up-to-date, <span>maintainable code</span> is what makes outstanding websites a reality.</div>`,
             image: ProgrammingStandardsImage,
         },
         {
-            name: `<span>Original</span> Design`,
-            description: `<div>I believe, every web page needs to be <span>unique</span>.</div>`,
+            name: `<span>Reliable</span> Testing`,
+            description: `<div>For <span>production-ready</span> software, I always put <span>writing tests</span> among my main priorities.</div>`,
             image: OriginalDesignImage,
         }
     ];
@@ -37,7 +37,7 @@ const MyValuesPage = props => {
             },
         {
                 name: `<span>Modern</span> Frameworks`,
-                description: `<div>I keep myself <span>up-to-date</span> with modern JavaScript frameworks and syntax, e.g. <span>React</span> and <span>ES6+</span>.</div>`,
+                description: `<div>Always staying <span>up-to-date</span> with <span>React</span> & <span>Typescript</span> | <span>Python</span> & <span>NodeJS</span>.</div>`,
                 image: ModernFrameworksImage,
             },
         {

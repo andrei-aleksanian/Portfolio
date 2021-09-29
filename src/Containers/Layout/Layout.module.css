@@ -1,138 +1,152 @@
 /*Keeping layout on top at all times*/
-*{
-    z-index: 10;
+* {
+  z-index: 10;
 }
 
-footer{
-    margin: 0;
-    padding: 2vh 0;
+footer {
+  margin: 0;
+  padding: 2vh 0;
 
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
 
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-
-    background: #252933;
+  background: #252933;
 }
 
-footer ul{
-    color: #fff;
+footer ul {
+  color: #fff;
 
-    list-style: none;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-footer ul li{
-    margin: 0 1rem;
+footer ul li {
+  margin: 0 1rem;
 }
 
-footer p{
-    margin-top: 0.5rem;
-    color: #fff;
-    opacity: 0.9;
+footer p {
+  margin-top: 0.5rem;
+  color: #fff;
+  opacity: 0.9;
 }
 
-footer p span{
-    color: #d10000;
+footer p span {
+  color: #d10000;
 }
 
-.Header{
-    display: flex;
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    z-index: 9999;
-    position: absolute;
-    top: 1vh;
-    right: 0;
-    width: 100%;
-    height: 2px;
+  z-index: 9999;
+  position: absolute;
+  top: 1vh;
+  right: 0;
+  left: 0;
+  height: 50px;
+  padding: 0 2rem;
+
+  background-color: var(--color-bg2);
+  color: #fff;
+  transition: box-shadow, border-bottom, background-color 0.3s linear;
 }
 
-.Header ul{
-    display: none;
+.Logo {
+  display: block;
+  color: var(--color-text1);
+}
+
+.LogoStatic {
+  display: block;
+}
+
+.Header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.Header ul li {
+  display: none;
+  padding: 0 1rem;
+}
+
+.Header ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
+}
+
+.Header ul li a:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cv {
+  display: block !important;
+}
+
+.active {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .Fix {
-    position: fixed!important;
-    top: 0!important;
-    background-color: #252933!important;
-    box-shadow: 0 0 5px #252933;
+  position: fixed !important;
+  top: 0 !important;
+  background-color: #252933 !important;
+  box-shadow: 0 0 5px #252933;
 }
 
 .Fix .progressBar {
-    opacity: 1;
+  opacity: 1;
 }
 
-.progressBar{
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: #FF9100;
-    transition: width 0.5s ease-in-out;
-
-    border-radius: 2px;
+.Highlighted .progressBar {
+  width: 100%;
 }
 
-footer img{
-    width: 48px;
-    height: 48px;
+.Highlighted {
+  height: 50px;
 }
 
-@media screen and (min-width: 1000px){
-    .Header {
-        z-index: 9999;
-        position: absolute;
-        top: 1vh;
-        right: 0;
-        width: 100%;
+.Highlighted ul {
+  display: flex;
+}
 
-        height: 50px;
+.progressBar {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--color-action);
+  transition: width 0.5s ease-in-out;
 
-        background-color: rgba(255, 255, 255, 0);
-        display: flex;
-        align-items: center;
-        color: #fff;
-        transition: box-shadow, border-bottom, background-color 0.3s linear;
-    }
+  border-radius: 2px;
+}
 
-    .Header ul{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        padding-right: 10vh;
+footer img {
+  width: 48px;
+  height: 48px;
+}
 
-        list-style: none;
-    }
+@media screen and (min-width: 1000px) {
+  .Header {
+    height: 50px;
+    padding: 0 7rem;
+  }
 
-    .Header ul li{
-        padding: 0 1rem;
-    }
+  .Header ul li {
+    display: block;
+  }
 
-    .Header ul li a{
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 1.2em;
-        transition: all 0.3s ease-in-out;
-    }
-
-
-    .Header ul li a:hover {
-        color: rgba(255, 255, 255, 0.9);
-    }
-
-    .active{
-        color: rgba(255, 255, 255, 0.9)!important;
-    }
-
-    footer ul li{
-    }
-
-    footer img{
-        width: 64px;
-        height: 64px;
-    }
+  footer img {
+    width: 64px;
+    height: 64px;
+  }
 }

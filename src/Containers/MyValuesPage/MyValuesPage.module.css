@@ -1,52 +1,52 @@
-.MyValuesPage{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.MyValuesPage {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.smallValuesBox{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.smallValuesBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 
-    width: 100%;
-    height: 90%;
+  width: 90%;
+  height: 90%;
   margin-top: 30px;
 }
 
-.ValuesBox{
-    display: none;
+.ValuesBox {
+  display: none;
 }
 
-h1{
-    font-size: 3rem;
+h1 {
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 1000px) {
-    .smallValuesBox{
-        display: none;
-    }
+  .smallValuesBox {
+    display: none;
+  }
 
-    .MyValuesPage{
-        padding: 2vh 0;
-        height: auto;
-    }
+  .MyValuesPage {
+    padding: 2vh 0;
+    height: auto;
+  }
 
-    .MyValuesPage h1 {
-        font-size: 3.5rem;
-    }
+  .MyValuesPage h1 {
+    font-size: 3.5rem;
+  }
 
-    .ValuesBox{
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 0;
+  .ValuesBox {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
 
-        width: 90%;
-        height: auto;
-    }
+    width: 90%;
+    height: auto;
+  }
 }

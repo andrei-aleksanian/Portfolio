@@ -1,93 +1,89 @@
-.Value{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+.Value {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 
-    width: 85%;
-    margin: 3vh 0;
+  width: 85%;
+  margin: 3vh 0;
 
-    font-size: 17px;
-
+  font-size: 17px;
 }
 
-.SmallValue .Border > *:nth-child(2){
-    margin-bottom: 2vh;
+.SmallValue .Border > *:nth-child(2) {
+  margin-bottom: 2vh;
 }
 
-.Border{
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-evenly;
+.Border {
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
 
-    border: 2px solid #FF9100;
-    padding: 0 5% 3%;
-    margin: 0;
+  border: 2px solid #ff9100;
+  padding: 0 5% 3%;
+  margin: 1rem 0;
 
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
-    transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.Border:hover{
-    box-shadow: 0 0 20px 0 rgba(187,187,187,1);
+.Border:hover {
+  box-shadow: 0 0 20px 0 rgba(187, 187, 187, 1);
 }
 
-.Border img{
-    height: 50%;
-    width: 50%;
+.Border * {
+  margin: 0.5rem 0;
+}
 
-    margin: -20% 0 0;
+.Border img {
+  height: 128px;
+  width: 128px;
+
+  margin: -64px 0 24px;
 }
 
 span {
-    color: #d10000;
+  color: #d10000;
 }
 
-.Description{
+.Description {
   line-height: 1.4rem;
-
+  width: 300px;
 }
 
-@media screen and (min-width: 1000px){
-    .Value{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
+@media screen and (min-width: 1000px) {
+  .Value {
+    width: 33%;
+    height: auto;
+    padding: 0;
+    margin-top: 4rem;
 
-        width: 33%;
-        height: auto;
-        padding: 0;
-        margin-top: 5vh;
+    font-size: 17px;
+  }
 
-        font-size: 17px;
-    }
+  .Border {
+    width: 50%;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
 
-    .Border{
-        width: 50%;
-        height: auto;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        text-align: center;
+    border-radius: 2px;
+    border: 2px solid orange;
+    padding: 0.5em 0.2em;
+    margin: 0;
+  }
 
-        border-radius: 2px;
-        border: 2px solid orange;
-        padding: 0.5em 0.2em;
-        margin: 0;
-    }
+  .Border img {
+    height: 128px;
+    width: 128px;
+    margin: -48px 0 12px;
+  }
 
-    .Border img{
-        height: 60%;
-        width: 60%;
-    }
-
-    .Description{
-        margin: 1rem 1rem 1rem 2rem;
-        padding: 0 3rem;
-      line-height: 1.6rem;
-    }
+  .Description {
+    margin: 1rem 0 0;
+    padding: 0 3rem;
+    line-height: 1.6rem;
+  }
 }

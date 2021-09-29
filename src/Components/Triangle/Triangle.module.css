@@ -1,20 +1,19 @@
 .Triangle {
-    /*width: 0;*/
-    height: 0;
-    margin:0;
-    padding: 0;
-    border-left: 49vw solid transparent;
-    border-right: 49vw solid transparent;
+  /*width: 0;*/
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border-left: 49vw solid transparent;
+  border-right: 49vw solid transparent;
 
-    border-top: 2vw solid #252933;
+  border-top: 2vw solid var(--color-bg2);
 
-    scroll-margin-top: 3vh;
-
+  scroll-margin-top: 3vh;
 }
 
-.reverse{
-    background: #252933;
-    border-left: 49vw solid #252933;
-    border-right: 49vw solid #252933;
-    border-top: 2vw solid #fff;
+.reverse {
+  background: var(--color-bg2);
+  border-left: 49vw solid var(--color-bg2);
+  border-right: 49vw solid var(--color-bg2);
+  border-top: 2vw solid var(--color-bg1);
 }

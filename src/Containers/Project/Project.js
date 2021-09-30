@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import AliceCarousel from 'react-alice-carousel';
 import { useParams } from 'react-router';
 import Layout from "../../Containers/Layout/Layout";
@@ -23,9 +23,18 @@ export const DEFAULT_NAVIGATION_PROJECT = [
 export default function Project() {
   const {id} = useParams()
   const {images, name, link, mainPar, techStackPar, achievements} = projects[parseInt(id)-1]
+
+  useEffect(() => {
+    let isActive = true;
+    if (isActive) document.body.scrollTop = document.documentElement.scrollTop = 0;
+    return () => {
+      isActive = false;
+    }
+  }, [])
   return (
     <Layout static defaultNavigation={DEFAULT_NAVIGATION_PROJECT}>
       <div className={classes.index}>
+        <a name="#top"/>
         <div className={classes.Wrapper}>
           <div className={classes.Carousel}>
             <AliceCarousel autoPlay disableAutoPlayOnAction infinite autoPlayInterval="5000">

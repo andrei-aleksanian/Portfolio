@@ -25,3 +25,4 @@ yarn-error.log*
 /src/assets/img/Contact/
 
 .firebase
+.env

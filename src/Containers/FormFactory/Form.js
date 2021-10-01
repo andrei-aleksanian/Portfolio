@@ -3,8 +3,6 @@ import classes from "./Form.module.css";
 import Input from "./FormValidation/InputValidated";
 import axios from 'axios';
 import sendEmail from "./sendEmailCredentials";
-import {db} from '../../firebase/firebaseConfig'
-import { collection, addDoc, onSnapshot } from "firebase/firestore"; 
 
 const Form = props => {
     const [inputFields, setInputFields] = useState(null);
@@ -84,15 +82,6 @@ const Form = props => {
 
         if (formIsValid){
             setFormSubmitted(true);
-            // WARNING: this doesn't work
-            // I will try again later, this seems to be a firebase bug
-            addDoc(collection(db, "emails"), {
-                name: inputFields["name"].value,
-                email: inputFields["email"].value,
-                message: inputFields["message"].value,
-            })
-            .then((data) => console.log(data))
-            .catch((data) => console.log(data))
 
             axios({
                 method: "POST",
@@ -156,11 +145,7 @@ const Form = props => {
         "data-aos-once":"true",
         "data-aos-duration":"2000"
     };
-
-    useEffect(() => {
-        onSnapshot(collection(db, "emails"), (snapshot) => {console.log(snapshot.docs)});
-    })
-
+    
     return (
         <div {...topOfPageAnimation} className={classes.Wrapper}>
             <h1>{props.title}</h1>

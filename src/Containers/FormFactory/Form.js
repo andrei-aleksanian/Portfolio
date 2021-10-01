@@ -110,8 +110,8 @@ const Form = props => {
                 }
                 resetInputFields();
                 resetState();
-            }).catch(err => {
-                setError(err);
+            }).catch(() => {
+                setError("Failed to deliver");
                 setTimeout(resetState, 10000);
             });
         }

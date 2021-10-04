@@ -9,7 +9,7 @@ const InputValidated = props => {
             inputElement = <input {...props.elementConfig} value={props.value} onChange={props.changed} className={props.touched ? props.valid ? null : classes.invalid : null}/>;
             break;
         case("textarea"):
-            inputElement = <textarea {...props.elementConfig} value={props.value} onChange={props.changed} className={props.touched ? props.valid ? null : classes.invalid : null}/>;
+            inputElement = <textarea data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false" {...props.elementConfig} value={props.value} onChange={props.changed} className={props.touched ? props.valid ? null : classes.invalid : null}/>;
             break;
         default:
             inputElement = <input {...props.elementConfig} value={props.value} onChange={props.changed} className={props.touched ? props.valid ? null : classes.invalid : null}/>;

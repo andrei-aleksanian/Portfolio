@@ -1,7 +1,7 @@
 import React from 'react';
 import Value from "./Value/Value";
 import SmallValue from "./Value/SmallValue";
-import UXImage from '../../assets/img/Values/UserExperience.svg';
+import Diamond from '../../assets/img/Values/diamond2.svg';
 import ProgrammingStandardsImage from '../../assets/img/Values/ProgrammingStandards.svg';
 import OriginalDesignImage from '../../assets/img/Values/test.svg';
 import ResponsiveDesignImage from '../../assets/img/Values/ResponsiveDesign.png';
@@ -13,18 +13,18 @@ import classes from './MyValuesPage.module.css';
 const MyValuesPage = props => {
     let values = [
         {
-            name: `<span>User</span> Experience`,
-            description: `<div><span>User</span> Experience is always my <span>top priority</span>.</div>`,
-            image: UXImage,
+            name: `<span>Best</span> Practices`,
+            description: `<div><span>Agile</span>, <span>TDD</span>, <span>AWS/Azure WAF</span> and countless others are always at the core of the software I write.</div>`,
+            image: Diamond,
         },
         {
-            name: `<span>Programming</span> Standards`,
-            description: `<div>Up-to-date, <span>maintainable code</span> is what makes outstanding websites a reality.</div>`,
+            name: `<span>Clean</span> Code`,
+            description: `<div>Simple, <span>maintainable code</span> is what makes outstanding websites a reality.</div>`,
             image: ProgrammingStandardsImage,
         },
         {
-            name: `<span>Reliable</span> Testing`,
-            description: `<div>For <span>production-ready</span> software, I always put <span>writing tests</span> among my main priorities.</div>`,
+            name: `<span>Test</span> Driven Development`,
+            description: `<div>For <span>production-ready</span> software, I always try to <span>write tests first</span>.</div>`,
             image: OriginalDesignImage,
         }
     ];
@@ -37,12 +37,12 @@ const MyValuesPage = props => {
             },
         {
                 name: `<span>Modern</span> Frameworks`,
-                description: `<div>Always staying <span>up-to-date</span> with <span>React</span> & <span>Typescript</span> | <span>Python</span> & <span>NodeJS</span>.</div>`,
+                description: `<div>Always staying <span>up-to-date</span> with modern libraries and frameworks.`,
                 image: ModernFrameworksImage,
             },
         {
                 name: `<span>Creativity</span>`,
-                description: `<div>I think developers should be able to find creative ways to <span>engage</span> with the user.</div>`,
+                description: `<div>I believe developers should be able to find creative ways to <span>engage</span> with the user.</div>`,
                 image: CreativityImage,
             }
     ];

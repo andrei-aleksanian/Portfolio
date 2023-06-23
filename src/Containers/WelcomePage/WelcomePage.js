@@ -13,7 +13,7 @@ const WelcomePage = props => {
         <div id={props.id} className={classes.WelcomePage}>
             <div className={classes.LogoBox} {...topOfPageAnimation}>
                 <h1 className={classes.Logo}>Andrei <span>Aleksanian</span></h1>
-                <p className={classes.Slogan}>- The user always comes first</p>
+                <p className={classes.Slogan}>My student projects &amp; internships 2019-2021</p>
             </div>
             <div className={classes.starSky}>
                 <HomeAnimation name="pts_anim" background={"transparent"} />

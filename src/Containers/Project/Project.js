@@ -43,7 +43,7 @@ export default function Project() {
           </div>
           <div className={classes.Story}>
             <div className={classes.StoryMain}>
-              <div className={classes.Heading}><h1>{name}</h1><a href={link} rel="noopener noreferrer" target="_blank"><img src={openLink} alt="see project"/></a></div>
+              <div className={classes.Heading}><h1>{name}</h1>{link && <a href={link} rel="noopener noreferrer" target="_blank"><img src={openLink} alt="see project"/></a>}</div>
               <p>{mainPar}</p>
             </div>
             <div>

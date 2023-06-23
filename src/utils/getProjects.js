@@ -33,15 +33,14 @@ import image2WeatherToday from '../assets/img/Projects/WeatherToday/2.png'
 const visualization = {
   preview: imagePreviewEmbeddings,
   images: [image1Embeddings, image2Embeddings, image3Embeddings, image4Embeddings],
-  name: "See Your Embeddings",
-  link: "http://see-your-embeddings.com/", 
+  name: "Data Visualization",
+  link: "https://github.com/andrei-aleksanian/DataVisualization", 
   mainPar: "A summer job I had with a PhD student who needed a demo website for their ML algorithms. I took the algorithms and wrapped them in a server-client architecture. Achieved very seamless user experience considering the algorithms' complexity is O(n^2) and O(n^3). Split the processes into different microservices and orchestrated everything using Docker. Not to mention tests, docs, CI/CD, DevOps, frontend, backend, DB management... all done from scratch!", 
   techStackPar: "React & Typescript | FastAPI & MySQL", 
   achievements: [
     "Achieved seamless user experience with smart state management, meticulous error handling and fast backend.",
     "Well tested backend and frontend. Close to 100% coverage in critical parts of the application.", 
     "Designed the architecture of 5 microservices. Orchestrated neatly with Docker.", 
-    "Split the API in 2 to achieve a stable experience for the users. Connected them via proxy.", 
     "DevOps done from scratch. Achieved seamless CI/CD process with Docker and GitHub.", 
   ]
 }
@@ -50,7 +49,6 @@ const gss = {
   preview: imagePreviewGSS,
   images: [image1GSS, image2GSS, image3GSS, image4GSS, image5GSS, image6GSS, image7GSS],
   name: "Feedback Tool",
-  link: "https://gss.cserdean.com", 
   mainPar: "A feedback tool for \"Great Science Share\". Full-stack summer job from 2020 followed by a part-time return in 2021 winter as a technical architect. Features integration with Google Forms API and an admin panel to manage all the ongoing surveys. I joined this project twice - once as a developer when we created it and then I came back as a senior to lead a new team to fix bugs and add new features. This has really been a great experience that opened my eyes to why we need good documentation, code QA and tests. When I came back to it in 2021 I had to fix all the problems we had left and learned a lot from it!", 
   techStackPar: "React & Typescript | NodeJS(Express) & MySQL", 
   achievements: [
@@ -65,8 +63,7 @@ const flowerShop = {
   preview: imageFlowerPreview,
   images: [imageFlower1, imageFlower2, imageFlower3, imageFlower4],
   name: "Flower Shop",
-  link: "https://cvetyotamira.herokuapp.com/", 
-  mainPar: "A full-stack application built by me for a client in Russia. Includes a fully manageable database with an admin panel and is focused on delivering a great user experience to the users. Unfortunately, I couldn't maintain this project for the client and they moved on with another solution. However, the experience doesn't go anywhere and the project is still available for viewing! (It's on a free server, so please give it a minute to load.)", 
+  mainPar: "A full-stack application built by me for a client in Russia. Includes a fully manageable database with an admin panel and is focused on delivering a great user experience. Unfortunately, I couldn't maintain this project for the client and they moved on with another solution. However, the experience doesn't go anywhere and the project is still available for viewing! (It's on a free server, so please give it a minute to load.)", 
   techStackPar: "React & Redux | NodeJS(Express) & MongoDB", 
   achievements: [
     "Built and deployed the first full-stack application.", 
@@ -104,4 +101,4 @@ const weatherToday = {
   ]
 }
 
-export default [visualization, gss, flowerShop, bHome, weatherToday]
+export default [visualization, gss, flowerShop]

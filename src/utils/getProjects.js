@@ -35,13 +35,14 @@ const visualization = {
   images: [image1Embeddings, image2Embeddings, image3Embeddings, image4Embeddings],
   name: "Data Visualization",
   link: "https://github.com/andrei-aleksanian/DataVisualization", 
-  mainPar: "A summer job I had with a PhD student who needed a demo website for their ML algorithms. I took the algorithms and wrapped them in a server-client architecture. Achieved very seamless user experience considering the algorithms' complexity is O(n^2) and O(n^3). Split the processes into different microservices and orchestrated everything using Docker. Not to mention tests, docs, CI/CD, DevOps, frontend, backend, DB management... all done from scratch!", 
+  mainPar: "I worked as a full stack developer with a PhD student who required a demo website for their ML algorithms. I developed a server-client architecture to encapsulate and showcase the algorithms effectively. Despite their complex time complexities (O(n^2) and O(n^3)), I ensured a seamless user experience. By utilizing Docker, I divided the processes into microservices and handled everything from testing and documentation to CI/CD, DevOps, frontend, backend, and DB management. The entire project was built from scratch, demonstrating my self-taught expertise in full stack development.", 
   techStackPar: "React & Typescript | FastAPI & MySQL", 
   achievements: [
-    "Achieved seamless user experience with smart state management, meticulous error handling and fast backend.",
-    "Well tested backend and frontend. Close to 100% coverage in critical parts of the application.", 
-    "Designed the architecture of 5 microservices. Orchestrated neatly with Docker.", 
+    "Built an effective solution, reducing the time space complexity of ML algorithms from O(n^2) and O(n^3) to O(1) (for the given use case of a demo).",
+    "Tested the backend and frontend thoroughly. Close to 100% coverage in critical parts of the application.", 
+    "Designed the architecture of 5 microservices. Orchestrated them neatly with Docker.", 
     "DevOps done from scratch. Achieved seamless CI/CD process with Docker and GitHub.", 
+    "Ensured high code quality with unit tests, linters and commit hooks.", 
   ]
 }
 
@@ -49,28 +50,27 @@ const gss = {
   preview: imagePreviewGSS,
   images: [image1GSS, image2GSS, image3GSS, image4GSS, image5GSS, image6GSS, image7GSS],
   name: "Feedback Tool",
-  mainPar: "A feedback tool for \"Great Science Share\". Full-stack summer job from 2020 followed by a part-time return in 2021 winter as a technical architect. Features integration with Google Forms API and an admin panel to manage all the ongoing surveys. I joined this project twice - once as a developer when we created it and then I came back as a senior to lead a new team to fix bugs and add new features. This has really been a great experience that opened my eyes to why we need good documentation, code QA and tests. When I came back to it in 2021 I had to fix all the problems we had left and learned a lot from it!", 
+  mainPar: "I had the opportunity to work on a feedback tool for the \"Great Science Share\" organization. It was a full-stack summer job in 2020, and I returned part-time in the winter of 2021 as a \"technical architect.\" The tool integrated with the Google Forms API and included an admin panel to manage surveys. I joined the project twice - first as a developer during its creation and later as a senior team member to fix bugs and add new features. It was a great learning experience that emphasized the importance of good documentation, code quality assurance, and testing. When I returned in 2021, I addressed the remaining issues and learned a lot from it.", 
   techStackPar: "React & Typescript | NodeJS(Express) & MySQL", 
   achievements: [
     "Built and tested a new system from the ground up in a team of 4.", 
     "Led a new team of 6 developers and acted as a mentor to less experienced team members (after the project was renewed 3 months later).",
     "Refactored large parts of the architecture and solved critical problems the system had at the time. E.g. working around some Google API limitations.", 
     "Controlled code quality with code reviews. Enforced best practices in Typescript and NodeJS. No \"any\" would sneak by!", 
-    "Deployed the application online. Went through a rough last-minute deployment day of fixing major bugs that occurred in production.", 
   ]}
 
 const flowerShop = {
   preview: imageFlowerPreview,
   images: [imageFlower1, imageFlower2, imageFlower3, imageFlower4],
   name: "Flower Shop",
-  mainPar: "A full-stack application built by me for a client in Russia. Includes a fully manageable database with an admin panel and is focused on delivering a great user experience. Unfortunately, I couldn't maintain this project for the client and they moved on with another solution. However, the experience doesn't go anywhere and the project is still available for viewing! (It's on a free server, so please give it a minute to load.)", 
+  mainPar: "I completed my first practical full-stack application for a client, which was a significant learning experience for me. I discovered the importance of DevOps and Agile methodologies, realized why Waterfall is no longer favored, and gained insights into the limitations of JavaScript for production-ready software. Although I made some rookie mistakes, I made notable progress in requirements gathering, client communication, UX design, and strengthening my React skills.", 
   techStackPar: "React & Redux | NodeJS(Express) & MongoDB", 
   achievements: [
-    "Built and deployed the first full-stack application.", 
+    "Built and deployed my first full-stack application.", 
     "Achieved a great user experience flow. The contact forms are split into many and validated neatly using my own components.",
     "Adopted Redux best practices to track users' shopping cart state and use it throughout the ordering process.",
     "Implemented limited admin tools features.", 
-    "Made a lot of mistakes for the first time. This was a great project for finding out how to Not do things!", 
+    "Made a lot of mistakes for my first time. This was a great project for finding out how not to do things!", 
   ]}
 
 const bHome = {
